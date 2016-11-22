@@ -7,3 +7,18 @@ Template: Avada
 Version: 1.0.0
 Text Domain:  Avada
 */
+
+/* 전체적용 */
+body, h1, h2, h3, h4, h5, h6, li, p{font-family:IcoMoon,"nanumbarungothic","nanumbarungothic",'Century Gothic',sans-serif !important;}
+ul, li{list-style:none;margin:0;padding:0;}
+a:link, a:hover, a:active, a:visited{text-decoration:none;}
+
+/* 폰트설정 */
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css"); 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
