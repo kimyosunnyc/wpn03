@@ -367,7 +367,7 @@ function fusion_builder_redux_shortcode_styling( $sections ) {
 					),
 					'content_box_title_size' => array(
 						'label'       => esc_html__( 'Content Box Title Font Size', 'fusion-builder' ),
-						'description' => esc_html__( 'Controls the size of the title text.', 'fusion-builder' ),
+						'description' => esc_html__( 'Controls the size of the title text. in pixels', 'fusion-builder' ),
 						'id'          => 'content_box_title_size',
 						'default'     => '18px',
 						'type'        => 'dimension',
@@ -393,9 +393,14 @@ function fusion_builder_redux_shortcode_styling( $sections ) {
 						'label'       => esc_html__( 'Content Box Icon Font Size', 'fusion-builder' ),
 						'description' => esc_html__( 'Controls the size of the icon.', 'fusion-builder' ),
 						'id'          => 'content_box_icon_size',
-						'default'     => '21px',
-						'type'        => 'dimension',
+						'default'     => '21',
+						'type'        => 'slider',
 						'option_name' => $option_name,
+						'choices'     => array(
+							'min'  => '0',
+							'max'  => '250',
+							'step' => '1',
+						),
 					),
 					'content_box_icon_color' => array(
 						'label'       => esc_html__( 'Content Box Icon Color', 'fusion-builder' ),

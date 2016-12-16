@@ -52,11 +52,11 @@ class Avada_Layout {
 
 		// Append sidebar to after content div.
 		if ( Avada()->template->has_sidebar() && ! Avada()->template->double_sidebars() ) {
-			add_action( 'fusion_after_content', array( $this, 'append_sidebar_single' ) );
+			add_action( 'avada_after_content', array( $this, 'append_sidebar_single' ) );
 		} elseif ( Avada()->template->double_sidebars() ) {
-			add_action( 'fusion_after_content', array( $this, 'append_sidebar_double' ) );
-		} elseif ( ! Avada()->template->has_sidebar() && ( is_page_template( 'side-navigation.php' ) || is_singular( 'tribe_events' ) ) ) {
-			add_action( 'fusion_after_content', array( $this, 'append_sidebar_single' ) );
+			add_action( 'avada_after_content', array( $this, 'append_sidebar_double' ) );
+		} elseif ( ! Avada()->template->has_sidebar() && ( ( is_page_template( 'side-navigation.php' ) && 0 !== get_queried_object_id() ) || is_singular( 'tribe_events' ) ) ) {
+			add_action( 'avada_after_content', array( $this, 'append_sidebar_single' ) );
 		}
 
 	}
@@ -104,7 +104,7 @@ class Avada_Layout {
 				'sidebar_2' => Avada()->settings->get( 'woo_sidebar_2' ),
 				'position'  => Avada()->settings->get( 'woo_sidebar_position' ),
 			);
-		} elseif ( class_exists( 'WooCommerce' ) && ( is_product_category() || is_product_tag() || is_tax( 'product_brand' ) || is_tax( 'images_collections' ) || is_tax( 'shop_vendor' ) ) ) {
+		} elseif ( class_exists( 'WooCommerce' ) && ( ( is_woocommerce() && is_tax() ) || is_tax( 'product_brand' ) || is_tax( 'images_collections' ) || is_tax( 'shop_vendor' ) ) ) {
 			$sidebars = array(
 				'global'    => '1',
 				'sidebar_1' => Avada()->settings->get( 'woocommerce_archive_sidebar' ),
@@ -275,7 +275,7 @@ class Avada_Layout {
 		add_filter( 'fusion_sidebar_2_class', array( $this, 'sidebar_class' ) );
 
 		// Check for sidebar location and apply styling to the content or sidebar div.
-		if ( ! Avada()->template->has_sidebar() && ! ( is_page_template( 'side-navigation.php' ) || is_singular( 'tribe_events' ) ) ) {
+		if ( ! Avada()->template->has_sidebar() && ! ( ( is_page_template( 'side-navigation.php' ) && 0 !== get_queried_object_id() ) || is_singular( 'tribe_events' ) ) ) {
 			add_filter( 'fusion_content_style', array( $this, 'full_width_content_style' ) );
 
 			if ( is_archive() || is_home() ) {

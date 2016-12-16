@@ -243,8 +243,8 @@ class Avada_Product_Registration {
 
 		// If a WP Error object is returned we need to check if API is down.
 		if ( is_wp_error( $themes ) ) {
-			// 403 means the token is invalid, so in any other case set a transient to allow bypassing registration.
-			if ( 403 !== $themes->get_error_code() ) {
+			// 403 means the token is invalid, apart from that Envato API is down.
+			if ( 403 !== $themes->get_error_code() && '' !== $themes->get_error_message() ) {
 				set_site_transient( 'avada_envato_api_down', true, 3600 );
 			}
 

@@ -59,7 +59,7 @@ class Avada_Remote_installer {
 				}
 			}
 			$trimmed = trim( $body );
-			$parts   = explode( '|', $body );
+			$parts   = explode( '|', $trimmed );
 
 			$saved_nonce = array();
 
@@ -69,6 +69,8 @@ class Avada_Remote_installer {
 					esc_attr( $parts[0] ),
 					esc_attr( $parts[1] ),
 				);
+			} else {
+				return false;
 			}
 
 			set_transient( 'avada_ri_' . $download . $token, $saved_nonce, 600 );

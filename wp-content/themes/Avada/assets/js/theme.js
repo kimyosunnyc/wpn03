@@ -3907,6 +3907,10 @@ jQuery( window ).load( function() {
 						compareWidth = jQuery( thisTFSlider ).parent().parent().parent().width();
 						if ( 1 <= jQuery( thisTFSlider ).parents( '.post-content' ).length ) {
 							compareWidth = jQuery( thisTFSlider ).width();
+
+							if ( jQuery( thisTFSlider ).parents( '.tab-content' ).length ) {
+								compareWidth = jQuery( thisTFSlider ).parents( '.tab-content' ).width() - 60;
+							}
 						}
 						sliderHeight = aspectRatio * compareWidth;
 
@@ -3944,6 +3948,10 @@ jQuery( window ).load( function() {
 
 					if ( Modernizr.mq( 'only screen and (max-width: ' + avadaVars.content_break_point + 'px)' ) ) {
 						jQuery( thisTFSlider ).find( '.fusion-button' ).each( function() {
+							if ( 'undefined' === typeof jQuery( this ).data( 'old' ) ) {
+								jQuery( this ).data( 'old', jQuery( this ).attr( 'class' ) );
+							}
+
 							jQuery( this ).removeClass( 'button-xlarge button-large button-medium' );
 							jQuery( this ).addClass( 'button-small' );
 						});
@@ -4307,6 +4315,10 @@ jQuery( window ).load( function() {
 						compareWidth = jQuery( thisTFSlider ).parent().parent().parent().width();
 						if ( 1 <= jQuery( thisTFSlider ).parents( '.post-content' ).length ) {
 							compareWidth = jQuery( thisTFSlider ).width();
+
+							if ( jQuery( thisTFSlider ).parents( '.tab-content' ).length ) {
+								compareWidth = jQuery( thisTFSlider ).parents( '.tab-content' ).width() - 60;
+							}
 						}
 						sliderHeight = aspectRatio * compareWidth;
 

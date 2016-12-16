@@ -168,7 +168,7 @@ class Fusion_Builder_Filters {
 		$shortcode_option_map['title_size']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_title_size' );
 		$shortcode_option_map['title_color']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_title_color', 'reset' => true );
 		$shortcode_option_map['body_color']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_body_color', 'reset' => true );
-		$shortcode_option_map['icon_size']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_icon_size' );
+		$shortcode_option_map['icon_size']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_icon_size', 'reset' => true );
 		$shortcode_option_map['iconcolor']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_icon_color', 'reset' => true );
 		$shortcode_option_map['icon_circle']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_icon_circle', 'type' => 'select' );
 		$shortcode_option_map['icon_circle_radius']['fusion_content_boxes'] = array( 'theme-option' => 'content_box_icon_circle_radius' );

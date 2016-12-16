@@ -33,7 +33,7 @@ if ( 'enable' == $display_post_title ) {
 // Set the link on the link icon to a custom url if set in page options.
 $icon_permalink = ( fusion_get_page_option( 'link_icon_url', $post_id ) != null ) ? fusion_get_page_option( 'link_icon_url', $post_id ) : $post_permalink;
 
-if ( '' == fusion_get_page_option( 'image_rollover_icons', $post_id ) || 'default' == fusion_get_page_option( 'image_rollover_icons', $post_id ) ) {
+if ( '' === fusion_get_page_option( 'image_rollover_icons', $post_id ) || 'default' == fusion_get_page_option( 'image_rollover_icons', $post_id ) ) {
 	if ( Avada()->settings->get( 'link_image_rollover' ) && Avada()->settings->get( 'zoom_image_rollover' ) ) { // Link + Zoom.
 		$image_rollover_icons = 'linkzoom';
 	} elseif ( Avada()->settings->get( 'link_image_rollover' ) && ! Avada()->settings->get( 'zoom_image_rollover' ) ) { // Link.
@@ -60,13 +60,13 @@ $link_target = ( 'yes' == fusion_get_page_option( 'link_icon_target', $post_id )
 		 * Check if rollover icons should be displayed.
 		 */
 		?>
-		<?php if ( 'no' != $image_rollover_icons && 'product' != get_post_type( $post_id ) ) : ?>
+		<?php if ( 'no' !== $image_rollover_icons && 'product' !== get_post_type( $post_id ) ) : ?>
 			<?php
 			/**
 			 * If set, render the rollover link icon.
 			 */
 			?>
-			<?php if ( 'zoom' != $image_rollover_icons ) : ?>
+			<?php if ( 'zoom' !== $image_rollover_icons ) : ?>
 				<a class="fusion-rollover-link" href="<?php echo $icon_permalink; ?>"<?php echo $link_target; ?>><?php esc_html_e( 'Permalink', 'Avada' ); ?></a>
 			<?php endif; ?>
 
@@ -75,7 +75,7 @@ $link_target = ( 'yes' == fusion_get_page_option( 'link_icon_target', $post_id )
 			 * If set, render the rollover zoom icon.
 			 */
 			?>
-			<?php if ( 'link' != $image_rollover_icons ) : ?>
+			<?php if ( 'link' !== $image_rollover_icons ) : ?>
 				<?php $full_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' ); // Get the image data. ?>
 				<?php $full_image = ( ! is_array( $full_image ) ) ? array( 0 => '' ) : $full_image; ?>
 
@@ -93,7 +93,7 @@ $link_target = ( 'yes' == fusion_get_page_option( 'link_icon_target', $post_id )
 				 * If both icons will be shown, add a separator.
 				 */
 				?>
-				<?php if ( 'linkzoom' == $image_rollover_icons || '' === $image_rollover_icons ) : ?>
+				<?php if ( ( 'linkzoom' === $image_rollover_icons || '' === $image_rollover_icons ) && $full_image[0] ) : ?>
 					<div class="fusion-rollover-sep"></div>
 				<?php endif; ?>
 

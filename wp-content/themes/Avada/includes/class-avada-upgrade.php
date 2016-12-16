@@ -125,13 +125,15 @@ class Avada_Upgrade {
 			}
 		}
 
-		// If we run an upgrade then reset the dynamic-css.
 		if ( true === $upgraded ) {
+			// If we run an upgrade then reset the dynamic-css.
 			update_option( 'avada_dynamic_css_posts', array() );
-		}
-		// If we updated Avada, reset the fusion-builder demo pages.
-		if ( true === $upgraded ) {
+
+			// If we updated Avada, reset the fusion-builder demo pages.
 			$this->delete_fusion_builder_demos();
+
+			// Make sure that we reset the patcher messages.
+			update_site_option( Avada_Patcher_Admin_Notices::$option_name, array() );
 		}
 
 		/**

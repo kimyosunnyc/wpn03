@@ -84,10 +84,8 @@ class Avada_Admin {
 		// Get demos data on theme activation.
 		add_action( 'after_switch_theme', array( 'Avada_Importer_Data', 'get_data' ), 5 );
 
-		/*
-		// Beta versioning.
-		// add_action( 'admin_enqueue_scripts', array( $this, 'add_beta_testing_script' ) ); wpcs fix.
-		*/
+		// Change auto update notes for LayerSlider.
+		add_action( 'layerslider_ready', array( $this, 'layerslider_overrides' ) );
 
 		// Load jQuery in the demos page.
 		if ( isset( $_GET['page'] ) && 'avada-demos' === $_GET['page'] ) {
@@ -104,18 +102,6 @@ class Avada_Admin {
 	 */
 	public function add_jquery() {
 		wp_enqueue_script( 'jquery' );
-	}
-
-	/**
-	 * Adds a script for beta testing only.
-	 *
-	 * @since 5.0.0
-	 * @access public
-	 * @return void
-	 */
-	public function add_beta_testing_script() {
-		$ver = Avada::get_theme_version();
-		wp_enqueue_script( 'avada_beta_testing', trailingslashit( Avada::$template_dir_url ) . 'assets/admin/js/avada-beta-testing.js', array(), $ver );
 	}
 
 	/**
@@ -850,6 +836,19 @@ class Avada_Admin {
 		}
 
 		$this->theme_object = $theme_object;
+	}
+
+	/**
+	 * Override some LayerSlider data.
+	 *
+	 * @since 5.0.5
+	 * @access public
+	 * @return void
+	 */
+	public function layerslider_overrides() {
+
+	    // Disable auto-updates.
+	    $GLOBALS['lsAutoUpdateBox'] = false;
 	}
 }
 

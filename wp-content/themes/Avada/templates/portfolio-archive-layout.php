@@ -24,7 +24,7 @@ $portfolio_columns_int = avada_get_portfolio_columns( $portfolio_columns );
 
 // If one column text layout is used, add special class.
 if ( strpos( $portfolio_layout_setting, 'one' ) && ! strpos( $portfolio_layout_setting, 'text' ) ) {
-	$portfolio_classes[] = ' fusion-portfolio-one-nontext';
+	$portfolio_classes[] = 'fusion-portfolio-one-nontext fusion-portfolio-text-floated';
 }
 
 // Add the text class, if a text layout is used.
@@ -63,6 +63,14 @@ $column_spacing_class = $column_spacing = '';
 if ( ! strpos( $portfolio_layout_setting, 'one' ) ) {
 	$column_spacing_class = ' fusion-col-spacing';
 	$column_spacing = ' style="padding:' . Avada()->settings->get( 'portfolio_column_spacing' ) / 2 . 'px;"';
+}
+
+// Check pagination type.
+if ( 'load_more_button' === Avada()->settings->get( 'grid_pagination_type' ) ) {
+	$portfolio_classes[] = 'fusion-portfolio-paging-load-more-button';
+}
+if ( 'Infinite Scroll' === Avada()->settings->get( 'grid_pagination_type' ) ) {
+	$portfolio_classes[] = 'fusion-portfolio-paging-infinite';
 }
 
 // Get the correct ID of the archive.
@@ -107,7 +115,7 @@ if ( strpos( $portfolio_layout_setting, 'text' ) ) {
 					 * Open portfolio-item-wrapper for text layouts.
 					 */
 					?>
-					<?php if ( strpos( $portfolio_layout_setting, 'text' ) ) : ?>
+					<?php if ( strpos( $portfolio_layout_setting, 'text' ) || strpos( $portfolio_layout_setting, 'one' ) ) : ?>
 						<div class="fusion-portfolio-content-wrapper">
 					<?php endif; ?>
 
@@ -232,16 +240,6 @@ if ( strpos( $portfolio_layout_setting, 'text' ) ) {
 
 								</div><!-- end post-content -->
 
-								<?php
-								/**
-								 * On unboxed one column layouts render a separator at the bottom of the post.
-								 */
-								?>
-								<?php if ( strpos( $portfolio_layout_setting, 'one' ) && 'unboxed' === $portfolio_text_layout ) : ?>
-									<div class="fusion-clearfix"></div>
-									<div class="fusion-separator sep-double"></div>
-								<?php endif; ?>
-
 							</div><!-- end portfolio-content -->
 
 						<?php endif; // End template check. ?>
@@ -251,8 +249,18 @@ if ( strpos( $portfolio_layout_setting, 'text' ) ) {
 					 * Close portfolio-item-wrapper for text layouts.
 					 */
 					?>
-					<?php if ( strpos( $portfolio_layout_setting, 'text' ) ) : ?>
+					<?php if ( strpos( $portfolio_layout_setting, 'text' ) || strpos( $portfolio_layout_setting, 'one' ) ) : ?>
 						</div>
+
+						<?php
+						/**
+						 * On unboxed one column layouts render a separator at the bottom of the post.
+						 */
+						?>
+						<?php if ( strpos( $portfolio_layout_setting, 'one' ) && 'unboxed' === $portfolio_text_layout ) : ?>
+							<div class="fusion-clearfix"></div>
+							<div class="fusion-separator sep-double"></div>
+						<?php endif; ?>						
 					<?php endif; ?>
 
 				</article><!-- end portfolio-post -->

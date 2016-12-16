@@ -29,8 +29,8 @@ $avada_contact = new Avada_Contact();
 				<?php the_content(); ?>
 
 				<?php if ( ! Avada()->settings->get( 'email_address' ) ) : // Email address not set. ?>
-					<?php if ( shortcode_exists( 'alert' ) ) : ?>
-						<?php echo do_shortcode( '[alert type="error" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . esc_html__( 'Form email address is not set in Theme Options. Please fill in a valid address to make contact form work.', 'Avada' ) . '[/alert]' ); ?>
+					<?php if ( shortcode_exists( 'fusion_alert' ) ) : ?>
+						<?php echo do_shortcode( '[fusion_alert type="error" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . esc_html__( 'Form email address is not set in Theme Options. Please fill in a valid address to make contact form work.', 'Avada' ) . '[/fusion_alert]' ); ?>
 					<?php else : ?>
 						<h2 style="color:#b94a48;"><?php esc_html_e( 'Form email address is not set in Theme Options. Please fill in a valid address to make contact form work.', 'Avada' ); ?></h2>
 					<?php endif; ?>
@@ -38,8 +38,8 @@ $avada_contact = new Avada_Contact();
 				<?php endif; ?>
 
 				<?php if ( $avada_contact->has_error ) : // If errors are found. ?>
-					<?php if ( shortcode_exists( 'alert' ) ) : ?>
-						<?php echo do_shortcode( '[alert type="error" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . esc_html__( 'Please check if you\'ve filled all the fields with valid information. Thank you.', 'Avada' ) . '[/alert]' ); ?>
+					<?php if ( shortcode_exists( 'fusion_alert' ) ) : ?>
+						<?php echo do_shortcode( '[fusion_alert type="error" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . esc_html__( 'Please check if you\'ve filled all the fields with valid information. Thank you.', 'Avada' ) . '[/fusion_alert]' ); ?>
 					<?php else : ?>
 						<h3 style="color:#b94a48;"><?php esc_html_e( 'Please check if you\'ve filled all the fields with valid information. Thank you.', 'Avada' ); ?></h3>
 					<?php endif; ?>
@@ -47,8 +47,8 @@ $avada_contact = new Avada_Contact();
 				<?php endif; ?>
 
 				<?php if ( $avada_contact->email_sent ) : // If email is sent. ?>
-					<?php if ( shortcode_exists( 'alert' ) ) : ?>
-						<?php echo do_shortcode( '[alert type="success" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . sprintf( __( 'Thank you %s for using our contact form! Your email was successfully sent!', 'Avada' ), '<strong>' . $avada_contact->name . '</strong>' ) . '[/alert]' ); ?>
+					<?php if ( shortcode_exists( 'fusion_alert' ) ) : ?>
+						<?php echo do_shortcode( '[fusion_alert type="success" accent_color="" background_color="" border_size="1px" icon="" box_shadow="yes" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]' . sprintf( __( 'Thank you %s for using our contact form! Your email was successfully sent!', 'Avada' ), '<strong>' . $avada_contact->name . '</strong>' ) . '[/fusion_alert]' ); ?>
 					<?php else : ?>
 						<h3 style="color:#468847;"><?php printf( __( 'Thank you %s for using our contact form! Your email was successfully sent!', 'Avada' ), '<strong>' . $avada_contact->name . '</strong>' ); ?></h3>
 					<?php endif; ?>

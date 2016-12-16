@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 .ilightbox-closedhand * {
-  cursor: url(closedhand.cur), default !important;
+  cursor: url(assets/images/iLightbox/closedhand.cur), default !important;
 }
 .ilightbox-overlay {
   display: none;

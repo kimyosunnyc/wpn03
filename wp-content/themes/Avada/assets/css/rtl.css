@@ -61,18 +61,18 @@ Table of Contents
   /* Events Calendar
 ================================================================================================= */
 }
-.rtl .fusion-layout-column {
+.rtl .fusion_builder_column_1_1 {
   width: 100%;
-  float: right;
-  margin-left: 4%;
-  margin-right: 0;
 }
-.rtl .fusion-column {
+.rtl .fusion-layout-column {
   float: right;
 }
 .rtl .fusion-column-last,
 .rtl .fusion-spacing-no {
   margin: 0;
+}
+.rtl .fusion-column {
+  float: right;
 }
 .rtl .fusion-title.fusion-sep-none .title-heading-left {
   text-align: right;
@@ -120,14 +120,20 @@ Table of Contents
   margin-left: 0;
   margin-right: -15px;
 }
+.rtl .bbp-pagination .bbp-pagination-links .pagination-next,
+.rtl .pagination .pagination-next,
+.rtl .woocommerce-pagination .next {
+  margin-right: 3px;
+  margin-left: 0.25em;
+}
 .rtl .pagination-next:after,
 .rtl .single-navigation a[rel=next]:after,
 .rtl .woocommerce-pagination .next:after {
   content: '\f104';
-  left: -5px;
+  left: -0.25em;
   right: auto;
   padding-left: 0;
-  padding-right: 5px;
+  padding-right: 0.25em;
 }
 .rtl .fusion-read-more,
 .rtl .more a {

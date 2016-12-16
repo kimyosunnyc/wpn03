@@ -1,12 +1,11 @@
 <?php
-
 // Do not allow directly accessing this file.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 ?>
 <?php ob_start(); ?>
-<?php if ( 'related' == $type && 'fixed' == $post_featured_image_size && get_post_thumbnail_id( $post_id ) ) :
+<?php if ( 'related' === $type && 'fixed' === $post_featured_image_size && get_post_thumbnail_id( $post_id ) ) :
 
 	/**
 	 * Resize images for use as related posts.
@@ -33,6 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php elseif ( get_post_meta( $post_id, 'pyre_video', true ) ) : ?>
 
 		<?php
+		$image_size_class .= ' fusion-video'
+
 		/**
 		 * Show the video if one is set.
 		 */

@@ -6,6 +6,59 @@ http://theme-fusion.com/avada-doc/install-update/important-update-information/
 
 
 -----------------------------------------------------------------------------------------
+Version 5.0.6 - December 14th, 2016
+-----------------------------------------------------------------------------------------
+
+
+- NEW: Updated LayerSlider to 6.1
+- NEW: Updated Slider Revolution to 5.3.1.5
+- FIXED: user roles for multiple sidebars
+- FIXED: logo images with filenames like logoname12x12.jpg not correctly displayed
+- FIXED: buttons inside mega menus not correctly displayed
+- FIXED: Fusion Slider buttons not resizing back to desktop site on page resize
+- FIXED: side navigation showing on search results pages where side nav pages belong to results
+- FIXED: issue with WPML translated menus not showing correctly on archive pages
+- FIXED: WPML language switcher not displayed when using custom menu per page
+- FIXED: header parallax effect not working in Firefox
+- FIXED: lightbox 404 issue with hand cursor asset
+- FIXED: element, footer and slidingbar columns not being in correct order on RTL sites
+- FIXED: author name can be undefined on author page in breadcrumbs
+- FIXED: PHP notice in breadcrumbs on yearly archive pages
+- FIXED: 'All' filter not translateable in FAQ element
+- FIXED: LayerSlider not correctly importing on technology demo
+- FIXED: contact page using older versions of alert element
+- FIXED: column and sidebar issue on WooCommerce attribute and other archive pages
+- FIXED: flip icon option not working for content boxes element
+- FIXED: edit custom template not working in Fusion Builder
+
+
+-----------------------------------------------------------------------------------------
+Version 5.0.5 - November 22nd, 2016
+-----------------------------------------------------------------------------------------
+
+
+- NEW: container collapse status is now saved, so collapsed containers remain collapsed on reload
+- IMPROVED: logo template, introducing dimension calc fallback for default logo and retina logo without default one
+- IMPROVED: premium slider plugin download, making instant retry possible, if download failed
+- IMPROVED: pagination next/prev arrow spacing auto adjusting to font size, fixed arrows getting cut off
+- UPDATED: token creation instructions on registration page
+- FIXED: dynamic elements (blog, portfolio Fusion Slider etc.) inside of vertical tabs
+- FIXED: issue on page edit screen, where old button shortcodes make it impossible to change from editor to Fusion Builder
+- FIXED: Infinite scroll and Load more button for portfolio archive text layouts
+- FIXED: rollover link icon getting cut off on retina screens
+- FIXED: columns with overlay bg colors having display issues on IE and Edge
+- FIXED: page templates always being "default", when importing Fusion Builder Avada demo pages
+- FIXED: columns alignment issues, when deprecated last parameter is used
+- FIXED: content box icon alignment being wrong due to doubled px unit
+- FIXED: container name reverting to default name under certain circumstances
+- FIXED: WooCommerce reply to reviews missing top margin
+- FIXED: single portfolio page related projects not showing video items correctly
+- FIXED: portfolio one archive layout button alignment
+- FIXED: RTL spacing and alignment issue with columns
+- FIXED: Fusion Builder generator not being available within already saved child elements
+
+
+-----------------------------------------------------------------------------------------
 Version 5.0.4 - November 14th, 2016
 -----------------------------------------------------------------------------------------
 

@@ -811,7 +811,6 @@ class Fusion_Builder_Migrate {
 						<img src="<?php echo Avada::$template_dir_url; ?>/assets/images/logo_migration.png" alt="<?php esc_html_e( 'Avada Logo', 'Avada' ); ?>" width="453" height="95">
 						<span class="avada-version">
 							<span class="avada-version-inner"><?php echo $version; ?></span>
-							<!-- <script src='<?php echo trailingslashit( Avada::$template_dir_url ) . 'assets/admin/js/avada-beta-testing.js'; ?>' type='text/javascript'></script> -->
 						</span>
 					</div>
 					<div class="avada-content-wrapper">

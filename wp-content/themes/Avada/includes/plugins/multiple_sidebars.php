@@ -48,8 +48,6 @@ class Sidebar_Generator {
 		add_action( 'widgets_admin_page', array( $this, 'admin_page' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
 		add_action( 'admin_print_scripts', array( $this, 'admin_print_scripts' ) );
-		add_action( 'wp_ajax_add_sidebar', array( $this, 'add_sidebar' ) );
-		add_action( 'wp_ajax_remove_sidebar', array( $this, 'remove_sidebar' ) );
 
 		// Save posts/pages.
 		add_action( 'edit_post', array( $this, 'save_form' ) );
@@ -65,6 +63,11 @@ class Sidebar_Generator {
 	 * @access public
 	 */
 	public function init() {
+
+		if ( current_user_can( 'edit_theme_options' ) ) {
+			add_action( 'wp_ajax_add_sidebar', array( $this, 'add_sidebar' ) );
+			add_action( 'wp_ajax_remove_sidebar', array( $this, 'remove_sidebar' ) );
+		}
 
 		// Go through each sidebar and register it.
 		$sidebars = Sidebar_Generator::get_sidebars();
@@ -103,6 +106,9 @@ class Sidebar_Generator {
 	 */
 	public function admin_print_scripts() {
 
+		$ajax_add_sidebar_nonce = wp_create_nonce( 'add-sidebar' );
+		$ajax_remove_sidebar_nonce = wp_create_nonce( 'remove-sidebar' );
+
 		?>
 		<script>
 			function add_sidebar( sidebar_name ) {
@@ -111,6 +117,7 @@ class Sidebar_Generator {
 				mysack.execute = 1;
 				mysack.method  = 'POST';
 				mysack.setVar( 'action', 'add_sidebar' );
+				mysack.setVar( 'security', '<?php echo $ajax_add_sidebar_nonce; ?>' );
 				mysack.setVar( 'sidebar_name', sidebar_name );
 				// mysack.encVar( 'cookie', document.cookie, false );
 				mysack.onError = function() { alert( 'Ajax error. Cannot add sidebar' ) };
@@ -124,6 +131,7 @@ class Sidebar_Generator {
 				mysack.execute = 1;
 				mysack.method  = 'POST';
 				mysack.setVar( 'action', 'remove_sidebar' );
+				mysack.setVar( 'security', '<?php echo $ajax_remove_sidebar_nonce; ?>' );
 			  	mysack.setVar( 'sidebar_name', sidebar_name );
 			  	mysack.setVar( 'row_number', num );
 			  	//mysack.encVar( 'cookie', document.cookie, false );
@@ -144,8 +152,10 @@ class Sidebar_Generator {
 	 */
 	public function add_sidebar() {
 
+		check_ajax_referer( 'add-sidebar', 'security' );
+
 		$sidebars = Sidebar_Generator::get_sidebars();
-		$name     = str_replace( array( "\n", "\r", "\t" ), '', $_POST['sidebar_name'] );
+		$name     = str_replace( array( "\n", "\r", "\t" ), '', esc_html( $_POST['sidebar_name'] ) );
 		$counter  = ( is_array( $sidebars ) && ! empty( $sidebars ) ) ? count( $sidebars ) + 1 : 1;
 		$id       = Sidebar_Generator::name_to_class( $name );
 
@@ -204,6 +214,8 @@ class Sidebar_Generator {
 	 * @access public
 	 */
 	public function remove_sidebar() {
+
+		check_ajax_referer( 'remove-sidebar', 'security' );
 
 		$sidebars = Sidebar_Generator::get_sidebars();
 		$id       = str_replace( array( "\n", "\r", "\t" ), '', $_POST['sidebar_name'] );
@@ -282,10 +294,10 @@ class Sidebar_Generator {
 						<?php $cnt = 0; ?>
 						<?php foreach ( $sidebars as $sidebar ) : ?>
 							<?php $alt = ( 0 == $cnt % 2 ) ? 'alternate' : ''; ?>
-							<tr class="<?php echo $alt; ?>">
-								<td><?php echo $sidebar; ?></td>
+							<tr class="<?php echo esc_attr( $alt ); ?>">
+								<td><?php echo esc_html( $sidebar ); ?></td>
 								<td><?php echo 'fusion-' . strtolower( Sidebar_Generator::name_to_class( $sidebar ) ); ?></td>
-								<td><a href="javascript:void(0);" onclick="return remove_sidebar_link('<?php echo Sidebar_Generator::name_to_class( $sidebar ); ?>',<?php echo $cnt + 1; ?>);" title="<?php esc_html_e( 'Remove this Widget Section', 'Avada' ); ?>"><?php esc_attr_e( 'remove', 'Avada' ); ?></a></td>
+								<td><a href="javascript:void(0);" onclick="return remove_sidebar_link('<?php echo Sidebar_Generator::name_to_class( $sidebar ); ?>',<?php echo $cnt + 1; ?>);" title="<?php esc_attr_e( 'Remove this Widget Section', 'Avada' ); ?>"><?php esc_html_e( 'remove', 'Avada' ); ?></a></td>
 							</tr>
 							<?php $cnt++; ?>
 						<?php endforeach; ?>
@@ -295,7 +307,7 @@ class Sidebar_Generator {
 						</tr>
 					<?php endif; ?>
 				</table>
-				<p class="add_sidebar"><a href="javascript:void(0);" onclick="return add_sidebar_link()" title="<?php _e( 'Add New Widget Section', 'Avada' ); ?>" class="button button-primary"><?php _e( 'Add New Widget Section', 'Avada' ); ?></a></p>
+				<p class="add_sidebar"><a href="javascript:void(0);" onclick="return add_sidebar_link()" title="<?php esc_attr_e( 'Add New Widget Section', 'Avada' ); ?>" class="button button-primary"><?php esc_html_e( 'Add New Widget Section', 'Avada' ); ?></a></p>
 			</div>
 		</div>
 		<?php
@@ -388,7 +400,7 @@ class Sidebar_Generator {
 				<?php global $wp_registered_sidebars; ?>
 				<?php for ( $i = 0; $i < 1; $i++ ) : ?>
 					<select name="sidebar_generator[<?php echo $i; ?>]" style="display: none !important; width:100%">
-						<option value="0"<?php echo ( '' == $selected_sidebar[ $i ] ) ? ' selected' : ''; ?>><?php esc_html__( 'WP Default Sidebar', 'Avada' ); ?></option>
+						<option value="0"<?php echo ( '' == $selected_sidebar[ $i ] ) ? ' selected' : ''; ?>><?php echo esc_html( 'WP Default Sidebar', 'Avada' ); ?></option>
 						<?php $sidebars = $wp_registered_sidebars; ?>
 						<?php if ( is_array( $sidebars ) && ! empty( $sidebars ) ) : ?>
 							<?php foreach ( $sidebars as $sidebar ) : ?>
@@ -655,7 +667,7 @@ class Sidebar_Generator {
 	public static function name_to_class( $name ) {
 
 		$class = str_replace( array( ' ', ',', '.', '"', "'", '/', '\\', '+', '=', ')', '(', '*', '&', '^', '%', '$', '#', '@', '!', '~', '`', '<', '>', '?', '[', ']', '{', '}', '|', ':' ), '', $name );
-		return sanitize_html_class( $class );
+		return strtolower( sanitize_html_class( $class ) );
 
 	}
 }

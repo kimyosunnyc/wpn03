@@ -464,7 +464,7 @@ class Avada_Scripts {
 	 */
 	public function admin_css() {
 
-		echo '<link rel="stylesheet" type="text/css" href="' . Avada::$template_dir_url . '/assets/admin/css/admin_css.css?vesion=' . self::$version . '">';
+		echo '<link rel="stylesheet" type="text/css" href="' . Avada::$template_dir_url . '/assets/admin/css/admin.css?vesion=' . self::$version . '">';
 		echo '<style type="text/css">.widget input { border-color: #DFDFDF !important; }</style>';
 
 	}

@@ -236,11 +236,10 @@ class Avada_Breadcrumbs {
 				$this->html_markup .= $this->get_breadcrumb_leaf_markup( 'term' );
 			} // Date Archives.
 			elseif ( is_date() ) {
-				global $wp_locale;
-				// Set variables.
 				$year = esc_html( get_query_var( 'year' ) );
-				$month      = get_query_var( 'monthnum' );
-				$month_name = $wp_locale->get_month( $month );
+				if ( ! $year ) {
+					$year = substr( esc_html( get_query_var( 'm' ) ) , 0, 4 );
+				}
 
 				// Year Archive, only is a leaf.
 				if ( is_year() ) {
@@ -251,6 +250,15 @@ class Avada_Breadcrumbs {
 					$this->html_markup .= $this->get_breadcrumb_leaf_markup( 'month' );
 				} // Day Archive, needs year and month link and day leaf.
 				elseif ( is_day() ) {
+					global $wp_locale;
+
+					$month = get_query_var( 'monthnum' );
+					if ( ! $month ) {
+						$month = substr( esc_html( get_query_var( 'm' ) ) , 4, 2 );
+					}
+					
+					$month_name = $wp_locale->get_month( $month );
+
 					$this->html_markup .= $this->get_single_breadcrumb_markup( $year, get_year_link( $year ) );
 					$this->html_markup .= $this->get_single_breadcrumb_markup( $month_name, get_month_link( $year, $month ) );
 					$this->html_markup .= $this->get_breadcrumb_leaf_markup( 'day' );
@@ -599,16 +607,31 @@ class Avada_Breadcrumbs {
 				$title = $term->name;
 				break;
 			case 'year':
-				$title = esc_html( get_query_var( 'year' ) );
+				$year = esc_html( get_query_var( 'year', 0 ) );
+				if ( ! $year ) {
+					$year = substr( esc_html( get_query_var( 'm' ) ) , 0, 4 );
+				}
+				$title = $year;
 				break;
 			case 'month':
-				$title = $wp_locale->get_month( get_query_var( 'monthnum' ) );
+				$monthnum = get_query_var( 'monthnum', 0 );
+				if ( ! $monthnum ) {
+					$monthnum = substr( esc_html( get_query_var( 'm' ) ) , 4, 2 );
+				}
+				$title = $wp_locale->get_month( $monthnum );
 				break;
 			case 'day':
-				$title = get_query_var( 'day' );
+				$day = get_query_var( 'day' );
+				if ( ! $day ) {
+					$day = substr( esc_html( get_query_var( 'm' ) ) , 6, 2 );
+				}
+				$title = $day;
 				break;
 			case 'author':
 				$user  = $wp_query->get_queried_object();
+				if ( ! $user ) {
+					$user = get_user_by( 'ID', $wp_query->query_vars['author'] );
+				}
 				$title = $user->display_name;
 				break;
 			case 'search':

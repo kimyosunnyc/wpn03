@@ -41,7 +41,7 @@ class Avada_Init {
 		// Allow shortcodes in widget text.
 		add_filter( 'widget_text', 'do_shortcode' );
 
-		add_filter( 'wp_nav_menu_args', array( $this, 'main_menu_args' ) );
+		add_filter( 'wp_nav_menu_args', array( $this, 'main_menu_args' ), 5 );
 		add_action( 'admin_init', array( $this, 'theme_activation' ) );
 
 		// Term meta migration for WordPress 4.4.
@@ -374,7 +374,7 @@ class Avada_Init {
 
 		$c_page_id = Avada()->get_page_id();
 
-		if ( '' !== get_post_meta( $c_page_id, 'pyre_displayed_menu', true ) &&
+		if ( get_post_meta( $c_page_id, 'pyre_displayed_menu', true ) &&
 			'default' !== get_post_meta( $c_page_id, 'pyre_displayed_menu', true ) &&
 			( 'main_navigation' === $args['theme_location'] || 'sticky_navigation' === $args['theme_location'] )
 		) {

@@ -23,6 +23,6 @@ get_header();
 		<?php tribe_events_after_html(); ?>
 	</div> <!-- #tribe-events-pg-template -->
 </div>
-<?php do_action( 'fusion_after_content' ); ?>
+<?php do_action( 'avada_after_content' ); ?>
 <?php
 get_footer();

@@ -805,6 +805,9 @@ form.cart {
 #reviews li:last-child {
   margin-bottom: 0;
 }
+#reviews .children {
+  margin-top: 15px;
+}
 #reviews li .comment-text {
   padding: 15px;
   border: 1px solid #f2efef;
@@ -1226,6 +1229,7 @@ table.variations td {
   margin-right: 5px;
 }
 .product_list_widget li .star-rating {
+  display: block;
   margin: 5px 0;
 }
 .widget_shopping_cart_content .total .amount {

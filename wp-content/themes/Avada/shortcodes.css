@@ -3068,7 +3068,6 @@ button.fusion-button.button-3d:active {
   z-index: 1;
   min-height: 100%;
   min-width: 100%;
-  background-blend-mode: overlay;
 }
 .fullwidth-box.faded-background .fusion-row {
   position: relative;
@@ -4340,6 +4339,9 @@ body:not(:-moz-handler-blocked) .fusion-separator.sep-shadow:after {
     padding: 14px 55px;
   }
   .fusion-tabs.vertical-tabs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     border: none;
     clear: both;
     zoom: 1;
@@ -4353,10 +4355,9 @@ body:not(:-moz-handler-blocked) .fusion-separator.sep-shadow:after {
     clear: both;
   }
   .fusion-tabs.vertical-tabs .nav-tabs {
+    display: block;
     position: relative;
     left: 1px;
-    float: left;
-    width: 15.5%;
     border: 1px solid #F1F2F2;
     border-right: none;
   }
@@ -4376,17 +4377,17 @@ body:not(:-moz-handler-blocked) .fusion-separator.sep-shadow:after {
     border-top: none;
     cursor: pointer;
   }
+  .fusion-tabs.vertical-tabs .nav {
+    width: 15.5%;
+  }
   .fusion-tabs.vertical-tabs .tab-content {
-    float: left;
     width: 84.5%;
   }
   .fusion-tabs.vertical-tabs .tab-pane {
-    float: left;
     padding: 30px;
     border: 1px solid #F1F2F2;
   }
   .fusion-tabs.vertical-tabs.clean .nav-tabs {
-    width: 25%;
     background-color: transparent;
     border: none;
   }
@@ -4394,6 +4395,9 @@ body:not(:-moz-handler-blocked) .fusion-separator.sep-shadow:after {
     margin: 0;
     padding: 10px 15px;
     border: 1px solid;
+  }
+  .fusion-tabs.vertical-tabs.clean .nav {
+    width: 25%;
   }
   .fusion-tabs.vertical-tabs.clean .tab-content {
     margin: 0;

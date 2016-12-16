@@ -770,7 +770,7 @@ if ( ! function_exists( 'avada_display_sidenav' ) ) {
 	 */
 	function avada_display_sidenav( $post_id ) {
 
-		if ( is_page_template( 'side-navigation.php' ) ) {
+		if ( is_page_template( 'side-navigation.php' ) && 0 !== get_queried_object_id() ) {
 			$html = '<ul class="side-nav">';
 
 			$post_ancestors = get_ancestors( $post_id, 'page' );

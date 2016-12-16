@@ -62,7 +62,7 @@ class Avada {
 	 * @access public
 	 * @var string
 	 */
-	public static $version = '5.0.4';
+	public static $version = '5.0.6';
 
 	/**
 	 * The original option name.
@@ -314,10 +314,10 @@ class Avada {
 
 		// Initialize bundled plugins array.
 		self::$bundled_plugins = array(
-			'fusion_core' => array( 'slug' => 'fusion-core', 'name' => 'Fusion Core', 'version' => '3.0.4' ),
-			'fusion_builder' => array( 'slug' => 'fusion-builder', 'name' => 'Fusion Builder', 'version' => '1.0.4' ),
-			'layer_slider' => array( 'slug' => 'LayerSlider', 'name' => 'LayerSlider WP', 'version' => '6.0.5' ),
-			'slider_revolution' => array( 'slug' => 'revslider', 'name' => 'Slider Revolution', 'version' => '5.3.0.2' ),
+			'fusion_core' => array( 'slug' => 'fusion-core', 'name' => 'Fusion Core', 'version' => '3.0.6' ),
+			'fusion_builder' => array( 'slug' => 'fusion-builder', 'name' => 'Fusion Builder', 'version' => '1.0.6' ),
+			'layer_slider' => array( 'slug' => 'LayerSlider', 'name' => 'LayerSlider WP', 'version' => '6.1.0' ),
+			'slider_revolution' => array( 'slug' => 'revslider', 'name' => 'Slider Revolution', 'version' => '5.3.1.5' ),
 		);
 
 		// Instantiate secondary classes.

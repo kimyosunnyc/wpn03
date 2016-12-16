@@ -127,7 +127,7 @@ class Avada_Template {
 			$sidebar_2 = Avada()->settings->get( 'portfolio_archive_sidebar_2' );
 		}
 
-		if ( is_tax( 'product_cat' ) || is_tax( 'product_tag' ) ) {
+		if ( class_exists( 'WooCommerce' ) && ( ( is_woocommerce() && is_tax() ) || is_tax( 'product_brand' ) || is_tax( 'images_collections' ) || is_tax( 'shop_vendor' ) ) ) {
 			$sidebar_1 = Avada()->settings->get( 'woocommerce_archive_sidebar' );
 			$sidebar_2 = Avada()->settings->get( 'woocommerce_archive_sidebar_2' );
 		}
@@ -241,7 +241,7 @@ class Avada_Template {
 			$classes[] = 'double-sidebars';
 		}
 
-		if ( is_page_template( 'side-navigation.php' ) ) {
+		if ( is_page_template( 'side-navigation.php' ) && 0 !== get_queried_object_id() ) {
 			$classes[] = 'has-sidebar';
 
 			if ( is_array( $sidebar_2 ) && $sidebar_2[0] ) {
