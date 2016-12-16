@@ -8,11 +8,6 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-/* 전체적용 */
-body, h1, h2, h3, h4, h5, h6, li, p{font-family:IcoMoon,"nanumbarungothic","nanumbarungothic",'Century Gothic',sans-serif !important;}
-ul, li{list-style:none;margin:0;padding:0;}
-a:link, a:hover, a:active, a:visited{text-decoration:none;}
-
 /* 폰트설정 */
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
@@ -22,3 +17,43 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+/* 전체적용 */
+body, h1, h2, h3, h4, h5, h6, li, p{font-family:IcoMoon,'맑은고딕','MalgunGothic',"nanumbarungothic","nanumbarungothic",'Century Gothic',sans-serif !important;}
+ul, li{list-style:none;margin:0;padding:0;}
+
+.list-st-1 li {text-indent: -1em; margin-left: 1em;}
+.list-st-1 li:before {content:"▪ ";color:#508800;}
+a:link, a:hover, a:active, a:visited{text-decoration:none;}
+
+.fusion-title h2.title-heading-left {padding-right:20px;}
+
+/* 솔루션 */
+#page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
+.page_1_1_st01 p{padding:15px 10px;text-align:center;background:#005538;color:#fff;}
+.page_1_1_st01 ul {padding:15px 10px;}
+
+.page_tit {letter-spacing:-0.03em;}
+
+.p_tit_01 {text-align:center !important;padding:0;margin:0;font-size:1.3em;color:#fff;text-shadow: 0 1px 3px #393939;}
+.p_tit_01 h2 {padding:0;margin:20px 0 10px 0;font-size:2.6em !important;font-weight:normal !important;color:#fff !important;}
+.p_tit_01_s {width:100px;margin:0;padding:20px 0 40px 0;display:inline-block;font-weight:500;color:#02b15d;font-size:16px;border-bottom:1px solid #fff;text-shadow:none;}
+.mobile_p_st01 {color:#fff;text-align:center;padding-top:15px;text-shadow: 0 1px 3px #393939;}
+.mobile_p_st01 .mobile_p_st02{font-size:16px;font-weight:600;}
+
+.kstudio_tab h4.fusion-tab-heading{font-size:14px;}
+.ifrs_icon div.alignleft{margin-right:5px !important;}
+
+/* Footer */
+.fusion-footer-widget-area .widget-title {color:#268b41 !important;}
+.fusion-footer-widget-area .widget-title {margin-bottom:15px;}
+.fusion-footer-widget-area ul li {border:none !important;font-size:1.05em;}
+.fusion-widget-area .widget_nav_menu li {padding:3px 0;color:#65686e;}
+.fusion-widget-area .widget_nav_menu li a:before{display:none;}
+
+/* Copyright */
+.copyright_logo {display:inline;float:left;width:14%;padding-top:30px;}
+.copyright_txt {display:inline;float:left;width:70%;}
+.copyright_icon {display:inline;float:left;width:10%;padding-top:25px;}
+.copyright_icon ul {display:inline;list-style:none;}
+.copyright_icon ul li {float:left;padding:0 5px;}

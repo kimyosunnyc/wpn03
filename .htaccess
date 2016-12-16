@@ -16,4 +16,7 @@ ServerEncoding UTF-8
 ClientEncoding EUC-KR
 </IfModule>
 
+php_value max_execution_time 300
+php_value max_input_vars 3000
+
 # END WordPress
