@@ -28,6 +28,11 @@ var FusionPageBuilder = FusionPageBuilder || {};
 			render: function() {
 				this.$el.html( this.template( this.model.toJSON() ) );
 
+				if ( 'undefined' !== typeof ( this.model.attributes.params.admin_toggled ) && 'yes' === this.model.attributes.params.admin_toggled ) {
+						this.$el.addClass( 'fusion-builder-section-folded' );
+						this.$el.find( 'span' ).toggleClass( 'dashicons-arrow-up' ).toggleClass( 'dashicons-arrow-down' );
+				}
+
 				return this;
 			},
 
@@ -365,9 +370,15 @@ var FusionPageBuilder = FusionPageBuilder || {};
 				}
 
 				this.$el.toggleClass( 'fusion-builder-section-folded' );
-				this.$el.find( '.fusion-builder-section-content' ).slideToggle( 'fast' );
 				thisEl.find( 'span' ).toggleClass( 'dashicons-arrow-up' ).toggleClass( 'dashicons-arrow-down' );
-				this.$el.find( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).toggle();
+
+				if ( this.$el.hasClass( 'fusion-builder-section-folded' ) ) {
+					this.model.attributes.params.admin_toggled = 'yes';
+				} else {
+					this.model.attributes.params.admin_toggled = 'no';
+				}
+
+				FusionPageBuilderEvents.trigger( 'fusion-element-edited' );
 			},
 
 			renameContainer: function( event ) {

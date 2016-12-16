@@ -35,7 +35,8 @@ function fusion_builder_register_layouts() {
 		'exclude_from_search' => true,
 		'hierarchical'        => false,
 		'show_in_nav_menus'   => false,
-		'show_ui'             => false,
+		'show_ui'             => true,
+		'show_in_menu'        => false,
 		'supports'            => array( 'title', 'editor', 'revisions' ),
 	);
 

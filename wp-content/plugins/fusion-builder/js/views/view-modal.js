@@ -297,6 +297,11 @@ var FusionPageBuilder = FusionPageBuilder || {};
 
 				attributes = { params: ({}) };
 
+				// Preserve container admin label
+				if ( 'fusion_builder_container' === this.model.get( 'element_type' ) ) {
+					attributes.params.admin_label = 'undefined' !== typeof this.model.attributes.params.admin_label ? this.model.attributes.params.admin_label : '';
+				}
+
 				this.$el.find( 'input, select, textarea, #fusion_builder_content_main, #fusion_builder_content_main_child, #generator_element_content, #generator_multi_child_content, #element_content' ).not( ':input[type=button], .fusion-icon-search, .category-search-field, .fusion-builder-table input, .fusion-builder-table textarea, .single-builder-dimension .fusion-builder-dimension input, .fusion-hide-from-atts' ).each( function() {
 					var $thisEl = $( this ),
 					    settingValue,

@@ -172,6 +172,9 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 				// Save history state
 				this.listenTo( FusionPageBuilderEvents, 'fusion-save-history-state', this.saveHistoryState );
 
+				// Toggled Containers
+				this.toggledContainers = true;
+
 				this.render();
 
 				if ( $( '#fusion_toggle_builder' ).hasClass( 'fusion_builder_is_active' ) ) {
@@ -1324,6 +1327,12 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 							view.addRow();
 						}
 
+						// Check if container is toggled
+						if ( ! _.isUndefined( element.attributes.params.admin_toggled ) && 'no' === element.attributes.params.admin_toggled || _.isUndefined( element.attributes.params.admin_toggled ) ) {
+							FusionPageBuilderApp.toggledContainers = false;
+							$( '.fusion-builder-layout-buttons-toggle-containers' ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+						}
+
 						break;
 
 					case 'fusion_builder_row':
@@ -1749,7 +1758,9 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 
 			toggleAllContainers: function( event ) {
 
-				var toggleButton;
+				var toggleButton,
+					containerCID,
+					that = this;
 
 				if ( event ) {
 					event.preventDefault();
@@ -1760,16 +1771,34 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 				if ( toggleButton.hasClass( 'dashicons-arrow-up' ) ) {
 					toggleButton.removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
 
-					$( '.fusion-builder-section-content' ).hide();
-					$( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).hide();
-					$( '.fusion-builder-toggle' ).find( 'span' ).removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
+					jQuery( '.fusion_builder_container' ).each( function() {
+						var containerModel;
+
+						containerCID   = jQuery( this ).find( '.fusion-builder-data-cid' ).data( 'cid' );
+						containerModel = that.collection.find( function( model ) {
+							return model.get( 'cid' ) == containerCID;
+						} );
+						containerModel.attributes.params.admin_toggled = 'yes';
+						jQuery( this ).addClass( 'fusion-builder-section-folded' );
+						jQuery( this ).find( 'span' ).removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
+					});
 
 				} else {
 					toggleButton.addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
-					$( '.fusion-builder-section-content' ).show();
-					$( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).show();
-					$( '.fusion-builder-toggle' ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+					jQuery( '.fusion_builder_container' ).each( function() {
+						var containerModel;
+
+						containerCID   = jQuery( this ).find( '.fusion-builder-data-cid' ).data( 'cid' );
+						containerModel = that.collection.find( function( model ) {
+							return model.get( 'cid' ) == containerCID;
+						} );
+						containerModel.attributes.params.admin_toggled = 'no';
+						jQuery( this ).removeClass( 'fusion-builder-section-folded' );
+						jQuery( this ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+					});
 				}
+
+				FusionPageBuilderEvents.trigger( 'fusion-element-edited' );
 			},
 
 			showSavedElements: function( elementType, container ) {

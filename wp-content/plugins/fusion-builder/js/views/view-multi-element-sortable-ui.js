@@ -48,13 +48,16 @@ var FusionPageBuilder = FusionPageBuilder || {};
 
 				var params = {},
 				    defaultParams,
-				    value;
+				    value,
+						allowGenerator;
 
 				if ( event ) {
 					event.preventDefault();
 				}
 
 				defaultParams = fusionAllElements[ this.element_type ].params;
+
+				allowGenerator = ( 'undefined' !== typeof fusionAllElements[ this.element_type ].allow_generator ) ? fusionAllElements[ this.element_type ].allow_generator : '';
 
 				// Process default parameters from shortcode
 				_.each( defaultParams, function( param )  {
@@ -75,7 +78,8 @@ var FusionPageBuilder = FusionPageBuilder || {};
 					multi: 'multi_element_child',
 					child_element: 'true',
 					parent: this.attributes.cid,
-					params: params
+					params: params,
+					allow_generator: allowGenerator
 				} ] );
 
 				this.$add_sortable_item.removeClass( 'fusion-builder-add-sortable-initial' );

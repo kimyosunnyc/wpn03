@@ -115,6 +115,15 @@
   display: inline-block;
   position: relative;
   vertical-align: top;
+  &.fusion-builder-section-folded {
+    .fusion-builder-section-content,
+    .fusion-builder-settings-container,
+    .fusion-builder-clone-container,
+    .fusion-builder-remove,
+    .fusion-builder-save-element {
+        display: none;
+    }
+  }
   &:last-child {
     &.fusion-builder-section-folded {
       padding-bottom: 45px;

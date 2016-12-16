@@ -4,7 +4,7 @@
 Plugin Name: Fusion Builder
 Plugin URI: http://www.theme-fusion.com
 Description: ThemeFusion Page Builder Plugin
-Version: 1.0.4
+Version: 1.0.6
 Author: ThemeFusion
 Author URI: http://www.theme-fusion.com
 */
@@ -20,7 +20,7 @@ if ( ! defined( 'FUSION_BUILDER_DEV_MODE' ) ) {
 }
 // Plugin version.
 if ( ! defined( 'FUSION_BUILDER_VERSION' ) ) {
-	define( 'FUSION_BUILDER_VERSION', '1.0.4' );
+	define( 'FUSION_BUILDER_VERSION', '1.0.6' );
 }
 // Plugin Folder Path.
 if ( ! defined( 'FUSION_BUILDER_PLUGIN_DIR' ) ) {

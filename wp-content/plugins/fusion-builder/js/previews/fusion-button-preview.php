@@ -55,10 +55,16 @@ if ( class_exists( 'Avada' ) ) {
 		var button_background = 'linear-gradient(<?php echo $gradient_top; ?>, <?php echo $gradient_bottom; ?>)';
 
 	} else if ( 'custom' === params.color ) {
-		var accent_color = params.accent_color;
-		var border_width = ( -1 === params.border_width.indexOf( 'px' ) ) ? params.border_width + 'px' : params.border_width;
-		var gradient_top = params.button_gradient_top_color;
-		var gradient_bottom = params.button_gradient_bottom_color;
+		var accent_color = ( params.accent_color ) ? params.accent_color : '<?php echo $accent_color; ?>';
+
+		if ( params.border_width ) {
+			var border_width = ( -1 === params.border_width.indexOf( 'px' ) ) ? params.border_width + 'px' : params.border_width;
+		} else {
+			var border_width = '<?php echo $border_width; ?>';
+		}
+
+		var gradient_top = ( params.button_gradient_top_color ) ? params.button_gradient_top_color : '<?php echo $gradient_top; ?>';
+		var gradient_bottom = ( params.button_gradient_bottom_color ) ? params.button_gradient_bottom_color : '<?php echo $gradient_bottom; ?>';
 
 		if ( '' !== gradient_top && '' !== gradient_bottom ) {
 			var button_background = 'linear-gradient(' + gradient_top + ', ' + gradient_bottom + ')';

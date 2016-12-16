@@ -186,26 +186,26 @@ function fusion_builder_column_inner( $atts, $content = '' ) {
 
 		// If we are using the fallback, then work out first and last using global var.
 	} else {
+		$last = '';
+
 		if ( ! $inner_columns ) {
 			$inner_columns = 0;
 		}
-		if ( 'yes' !== $last ) {
-			if ( 0 === $inner_columns ) {
-				$classes .= ' fusion-column-first';
-			}
-			$inner_columns += $column_size;
-			if ( 0.990 < $inner_columns ) {
-				$last = 'yes';
-				$inner_columns = 0;
-			}
-			if ( 1 < $inner_columns ) {
-				$last = 'no';
-				$inner_columns = $column_size;
-				$classes .= ' fusion-column-first';
-			}
-		} else {
+
+		if ( 0 === $inner_columns ) {
+			$classes .= ' fusion-column-first';
+		}
+		$inner_columns += $column_size;
+		if ( 0.990 < $inner_columns ) {
+			$last = 'yes';
 			$inner_columns = 0;
 		}
+		if ( 1 < $inner_columns ) {
+			$last = 'no';
+			$inner_columns = $column_size;
+			$classes .= ' fusion-column-first';
+		}
+
 		if ( 'yes' === $last ) {
 			$classes .= ' fusion-column-last';
 		}
@@ -220,7 +220,7 @@ function fusion_builder_column_inner( $atts, $content = '' ) {
 		}
 		if ( empty( $background_image ) || 1 > $alpha ) {
 			$background_color_style = 'background-color:' . esc_attr( $background_color ) . ';';
-			if ( 'none' === $hover_type || empty( $hover_type ) ) {
+			if ( ( 'none' === $hover_type || empty( $hover_type ) ) && empty( $link ) ) {
 				$wrapper_style .= $background_color_style;
 			} else {
 				$wrapper_style_bg .= $background_color_style;
@@ -391,7 +391,7 @@ function fusion_builder_column_inner( $atts, $content = '' ) {
 		$additional_bg_color_span = '';
 		// @codingStandardsIgnoreStart
 		if ( $background_color_style && ( $is_IE || $is_edge ) ) {
-			 $additional_bg_color_span = '<span class="fusion-column-inner-bg-image" style="z-index:2;' . $background_color_style . '"></span>';
+			 $additional_bg_color_span = '<span class="fusion-column-inner-bg-image" style="' . $background_color_style . '"></span>';
 		}
 		// @codingStandardsIgnoreEnd
 
@@ -401,11 +401,10 @@ function fusion_builder_column_inner( $atts, $content = '' ) {
 				' . $inner_content . '
 			</div>
 			<span class="fusion-column-inner-bg hover-type-' . $hover_type . '">
-				<a ' . $href_link . '>'
+				<a ' . $href_link . '>
+					<span class="fusion-column-inner-bg-image" style="' . $wrapper_style_bg . '"></span>'
 					. $additional_bg_color_span .
-					'<span class="fusion-column-inner-bg-image" style="' . $wrapper_style_bg . '">
-					</span>
-				</a>
+				'</a>
 			</span>
 		</div>';
 	}

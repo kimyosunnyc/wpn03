@@ -992,6 +992,11 @@ var FusionPageBuilder = FusionPageBuilder || {};
 			render: function() {
 				this.$el.html( this.template( this.model.toJSON() ) );
 
+				if ( 'undefined' !== typeof ( this.model.attributes.params.admin_toggled ) && 'yes' === this.model.attributes.params.admin_toggled ) {
+						this.$el.addClass( 'fusion-builder-section-folded' );
+						this.$el.find( 'span' ).toggleClass( 'dashicons-arrow-up' ).toggleClass( 'dashicons-arrow-down' );
+				}
+
 				return this;
 			},
 
@@ -1329,9 +1334,15 @@ var FusionPageBuilder = FusionPageBuilder || {};
 				}
 
 				this.$el.toggleClass( 'fusion-builder-section-folded' );
-				this.$el.find( '.fusion-builder-section-content' ).slideToggle( 'fast' );
 				thisEl.find( 'span' ).toggleClass( 'dashicons-arrow-up' ).toggleClass( 'dashicons-arrow-down' );
-				this.$el.find( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).toggle();
+
+				if ( this.$el.hasClass( 'fusion-builder-section-folded' ) ) {
+					this.model.attributes.params.admin_toggled = 'yes';
+				} else {
+					this.model.attributes.params.admin_toggled = 'no';
+				}
+
+				FusionPageBuilderEvents.trigger( 'fusion-element-edited' );
 			},
 
 			renameContainer: function( event ) {
@@ -2849,6 +2860,11 @@ var FusionPageBuilder = FusionPageBuilder || {};
 
 				attributes = { params: ({}) };
 
+				// Preserve container admin label
+				if ( 'fusion_builder_container' === this.model.get( 'element_type' ) ) {
+					attributes.params.admin_label = 'undefined' !== typeof this.model.attributes.params.admin_label ? this.model.attributes.params.admin_label : '';
+				}
+
 				this.$el.find( 'input, select, textarea, #fusion_builder_content_main, #fusion_builder_content_main_child, #generator_element_content, #generator_multi_child_content, #element_content' ).not( ':input[type=button], .fusion-icon-search, .category-search-field, .fusion-builder-table input, .fusion-builder-table textarea, .single-builder-dimension .fusion-builder-dimension input, .fusion-hide-from-atts' ).each( function() {
 					var $thisEl = $( this ),
 					    settingValue,
@@ -4188,13 +4204,16 @@ var FusionPageBuilder = FusionPageBuilder || {};
 
 				var params = {},
 				    defaultParams,
-				    value;
+				    value,
+						allowGenerator;
 
 				if ( event ) {
 					event.preventDefault();
 				}
 
 				defaultParams = fusionAllElements[ this.element_type ].params;
+
+				allowGenerator = ( 'undefined' !== typeof fusionAllElements[ this.element_type ].allow_generator ) ? fusionAllElements[ this.element_type ].allow_generator : '';
 
 				// Process default parameters from shortcode
 				_.each( defaultParams, function( param )  {
@@ -4215,7 +4234,8 @@ var FusionPageBuilder = FusionPageBuilder || {};
 					multi: 'multi_element_child',
 					child_element: 'true',
 					parent: this.attributes.cid,
-					params: params
+					params: params,
+					allow_generator: allowGenerator
 				} ] );
 
 				this.$add_sortable_item.removeClass( 'fusion-builder-add-sortable-initial' );
@@ -4951,6 +4971,9 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 
 				// Save history state
 				this.listenTo( FusionPageBuilderEvents, 'fusion-save-history-state', this.saveHistoryState );
+
+				// Toggled Containers
+				this.toggledContainers = true;
 
 				this.render();
 
@@ -6104,6 +6127,12 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 							view.addRow();
 						}
 
+						// Check if container is toggled
+						if ( ! _.isUndefined( element.attributes.params.admin_toggled ) && 'no' === element.attributes.params.admin_toggled || _.isUndefined( element.attributes.params.admin_toggled ) ) {
+							FusionPageBuilderApp.toggledContainers = false;
+							$( '.fusion-builder-layout-buttons-toggle-containers' ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+						}
+
 						break;
 
 					case 'fusion_builder_row':
@@ -6529,7 +6558,9 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 
 			toggleAllContainers: function( event ) {
 
-				var toggleButton;
+				var toggleButton,
+					containerCID,
+					that = this;
 
 				if ( event ) {
 					event.preventDefault();
@@ -6540,16 +6571,34 @@ var FusionPageBuilderEvents = _.extend( {}, Backbone.Events );
 				if ( toggleButton.hasClass( 'dashicons-arrow-up' ) ) {
 					toggleButton.removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
 
-					$( '.fusion-builder-section-content' ).hide();
-					$( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).hide();
-					$( '.fusion-builder-toggle' ).find( 'span' ).removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
+					jQuery( '.fusion_builder_container' ).each( function() {
+						var containerModel;
+
+						containerCID   = jQuery( this ).find( '.fusion-builder-data-cid' ).data( 'cid' );
+						containerModel = that.collection.find( function( model ) {
+							return model.get( 'cid' ) == containerCID;
+						} );
+						containerModel.attributes.params.admin_toggled = 'yes';
+						jQuery( this ).addClass( 'fusion-builder-section-folded' );
+						jQuery( this ).find( 'span' ).removeClass( 'dashicons-arrow-up' ).addClass( 'dashicons-arrow-down' );
+					});
 
 				} else {
 					toggleButton.addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
-					$( '.fusion-builder-section-content' ).show();
-					$( '.fusion-builder-settings-container, .fusion-builder-clone-container, .fusion-builder-remove, .fusion-builder-save-element' ).show();
-					$( '.fusion-builder-toggle' ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+					jQuery( '.fusion_builder_container' ).each( function() {
+						var containerModel;
+
+						containerCID   = jQuery( this ).find( '.fusion-builder-data-cid' ).data( 'cid' );
+						containerModel = that.collection.find( function( model ) {
+							return model.get( 'cid' ) == containerCID;
+						} );
+						containerModel.attributes.params.admin_toggled = 'no';
+						jQuery( this ).removeClass( 'fusion-builder-section-folded' );
+						jQuery( this ).find( 'span' ).addClass( 'dashicons-arrow-up' ).removeClass( 'dashicons-arrow-down' );
+					});
 				}
+
+				FusionPageBuilderEvents.trigger( 'fusion-element-edited' );
 			},
 
 			showSavedElements: function( elementType, container ) {

@@ -56,6 +56,13 @@
   position: relative;
   vertical-align: top;
 }
+.fusion_builder_container.fusion-builder-section-folded .fusion-builder-section-content,
+.fusion_builder_container.fusion-builder-section-folded .fusion-builder-settings-container,
+.fusion_builder_container.fusion-builder-section-folded .fusion-builder-clone-container,
+.fusion_builder_container.fusion-builder-section-folded .fusion-builder-remove,
+.fusion_builder_container.fusion-builder-section-folded .fusion-builder-save-element {
+  display: none;
+}
 .fusion_builder_container:last-child.fusion-builder-section-folded {
   padding-bottom: 45px;
 }

@@ -159,7 +159,7 @@ function fusion_builder_container( $atts, $content = '' ) {
 	}
 
 	// Background.
-	if ( ! empty( $background_color ) ) {
+	if ( ! empty( $background_color ) && ! ( 'yes' === $fade && ! empty( $background_image ) && false === $video_bg ) ) {
 		$style .= 'background-color: ' . esc_attr( $background_color ) . ';';
 	}
 
@@ -222,7 +222,7 @@ function fusion_builder_container( $atts, $content = '' ) {
 	}
 
 	// Fading Background.
-	if ( 'yes' == $fade && ! empty( $background_image ) && false == $video_bg ) {
+	if ( 'yes' === $fade && ! empty( $background_image ) && false === $video_bg ) {
 		$bg_type    = 'faded';
 		$fade_style = '';
 		$classes .= ' faded-background';
@@ -262,7 +262,7 @@ function fusion_builder_container( $atts, $content = '' ) {
 
 	// Parallax.
 	$parallax_helper = '';
-	if ( false == $video_bg && ! empty( $background_image ) ) {
+	if ( false === $video_bg && ! empty( $background_image ) ) {
 		$parallax_data  = '';
 		$parallax_data .= ' data-bg-align="' . esc_attr( $background_position ) . '"';
 		$parallax_data .= ' data-direction="' . $background_parallax . '"';

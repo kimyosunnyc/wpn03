@@ -131,7 +131,7 @@
 						);
 						$post_types = get_post_types( $args, 'names', 'and' );
 						// Filter out not relevant post types (can add filter later).
-						$disabled_post_types = array( 'attachment', 'slide', 'themefusion_elastic' );
+						$disabled_post_types = array( 'attachment', 'slide', 'themefusion_elastic', 'fusion_template' );
 						foreach ( $disabled_post_types as $disabled ) {
 							unset( $post_types[ $disabled ] );
 						}
@@ -151,6 +151,7 @@
 							echo $post_type_obj->labels->singular_name . '</label>';
 							echo '</li>';
 						endforeach; ?>
+						<input type="hidden" name="post_types[]" value="fusion_template" />
 					</ul>
 				</div>
 			</div>

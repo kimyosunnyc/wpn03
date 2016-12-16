@@ -12,47 +12,34 @@
 
 		<div class="feature-section theme-browser rendered fusion-builder-addons">
 			<?php
-				$addons = array(
-					'addon_1' => array(
-						'title' => 'Addon 1',
-						'image' => plugins_url( '/images/coming-soon.jpg', __FILE__ ),
-						'ratinaImage' => plugins_url( '/images/coming-soon@2x.jpg', __FILE__ ),
-						'url'	=> '#1',
-					),
-					'addon_2' => array(
-						'title' => 'Addon 2',
-						'image' => plugins_url( '/images/coming-soon.jpg', __FILE__ ),
-						'ratinaImage' => plugins_url( '/images/coming-soon@2x.jpg', __FILE__ ),
-						'url'	=> '#2',
-					),
-					'addon_3' => array(
-						'title' => 'Addon 3',
-						'image' => plugins_url( '/images/coming-soon.jpg', __FILE__ ),
-						'ratinaImage' => plugins_url( '/images/coming-soon@2x.jpg', __FILE__ ),
-						'url'	=> '#3',
-					),
-					'addon_4' => array(
-						'title' => 'Addon 4',
-						'image' => plugins_url( '/images/coming-soon.jpg', __FILE__ ),
-						'ratinaImage' => plugins_url( '/images/coming-soon@2x.jpg', __FILE__ ),
-						'url'	=> '#4',
-					),
-					'addon_5' => array(
-						'title' => 'Addon 5',
-						'image' => plugins_url( '/images/coming-soon.jpg', __FILE__ ),
-						'ratinaImage' => plugins_url( '/images/coming-soon@2x.jpg', __FILE__ ),
-						'url'	=> '#5',
-					),
-				);
-				$n = 0;
+			$addons_json = ( isset( $_GET['reset_transient'] ) ) ? false : get_site_transient( 'fusion_builder_addons_json' );
+			if ( ! $addons_json ) {
+				$response = wp_remote_get( 'http://updates.theme-fusion.com/fusion_builder_addon/', array(
+					'timeout'    => 30,
+					'user-agent' => 'fusion-builder',
+				) );
+				$addons_json  = wp_remote_retrieve_body( $response );
+				set_site_transient( 'fusion_builder_addons_json', $addons_json, 300 );
+			}
+			$addons = json_decode( $addons_json, true );
+			// Move coming_soon to the end.
+			if ( isset( $addons['415041'] ) ) {
+				$coming_soon = $addons['415041'];
+				unset( $addons['415041'] );
+				$addons['coming-soon'] = $coming_soon;
+			}
+			$n = 0;
 			?>
 			<?php foreach ( $addons as $id => $addon ) : ?>
 				<div class="addon">
-					<img class="addon-image" src="" data-src="<?php esc_attr_e( $addon['image'] ); ?>" <?php echo ( ! empty( $addon['ratinaImage'] ) ) ? 'data-src-retina="' . esc_url_raw( $addon['ratinaImage'] ) . '"' : ''; ?> />
+					<img class="addon-image" src="" data-src="<?php echo esc_url_raw( $addon['thumbnail'] ); ?>" <?php echo ( ! empty( $addon['retinaThumbnail'] ) ) ? 'data-src-retina="' . esc_url_raw( $addon['retinaThumbnail'] ) . '"' : ''; ?> />
 					<noscript>
-						<img src="<?php esc_attr_e( $addon['image'] ); ?>" />
+						<img src="<?php echo esc_url_raw( $addon['thumbnail'] ); ?>" />
 					</noscript>
-					<a href="<?php esc_attr_e( $addon['url'] ); ?>" target="_blank"></a>
+					<?php if ( 'coming-soon' !== $id ) : ?>
+						<?php $url = add_query_arg( 'ref', 'ThemeFusion', $addon['url'] ); ?>
+						<a href="<?php echo esc_url_raw( $url ); ?>" target="_blank"></a>
+					<?php endif; ?>
 				</div>
 			<?php
 				$n++;

@@ -141,7 +141,7 @@ class FusionSC_Faq {
 			$first_filter = true;
 			if ( 'yes' == $filters ) {
 				$html .= '<li class="fusion-filter fusion-filter-all fusion-active">';
-				$html .= '<a data-filter="*" href="#">' . apply_filters( 'fusion_faq_all_filter_name', esc_html( 'All', 'fusion-builder' ) ) . '</a>';
+				$html .= '<a data-filter="*" href="#">' . apply_filters( 'fusion_faq_all_filter_name', esc_html__( 'All', 'fusion-builder' ) ) . '</a>';
 				$html .= '</li>';
 				$first_filter = false;
 			}
