@@ -20,13 +20,16 @@ Text Domain:  Avada
 
 /* 전체적용 */
 body, h1, h2, h3, h4, h5, h6, li, p{font-family:IcoMoon,'맑은고딕','MalgunGothic',"nanumbarungothic","nanumbarungothic",'Century Gothic',sans-serif !important;}
-ul, li{list-style:none;margin:0;padding:0;}
+ul{list-style:none;}
+ul, ol {margin:10px;padding:0;}
+li{margin:0;padding:0;}
 
 .list-st-1 li {text-indent: -1em; margin-left: 1em;}
 .list-st-1 li:before {content:"▪ ";color:#508800;}
 a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 .fusion-title h2.title-heading-left {padding-right:20px;}
+.p_green {color:#009b4f;}
 
 /* 솔루션 */
 #page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
@@ -34,15 +37,49 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .page_1_1_st01 ul {padding:15px 10px;}
 
 .page_tit {letter-spacing:-0.03em;}
-
-.p_tit_01 {text-align:center !important;padding:0;margin:0;font-size:1.3em;color:#fff;text-shadow: 0 1px 3px #393939;}
-.p_tit_01 h2 {padding:0;margin:20px 0 10px 0;font-size:2.6em !important;font-weight:normal !important;color:#fff !important;}
-.p_tit_01_s {width:100px;margin:0;padding:20px 0 40px 0;display:inline-block;font-weight:500;color:#02b15d;font-size:16px;border-bottom:1px solid #fff;text-shadow:none;}
-.mobile_p_st01 {color:#fff;text-align:center;padding-top:15px;text-shadow: 0 1px 3px #393939;}
-.mobile_p_st01 .mobile_p_st02{font-size:16px;font-weight:600;}
-
 .kstudio_tab h4.fusion-tab-heading{font-size:14px;}
 .ifrs_icon div.alignleft{margin-right:5px !important;}
+
+/* 파트너 */
+.partner_txt {font-size:13px !important;letter-spacing:-0.05em;}
+
+/* 채용안내 */
+.tb_st01 {width:100%;margin:0 0 15px 0;border-top:2px solid #009b4f;border-collapse:collapse;}
+.tb_st01 th, .tb_st01 td {text-align:center;padding:10px;border:1px solid #dbdbdb;}
+.tb_st01 th {background:#f0f0f0;font-weight:bold;}
+.tb_st01 td.txt_align_left {text-align:left;}
+
+.recruit_st01{width:100%;border:1px solid #009b4f;}
+.recruit_st01 dt {padding:10px;background:#009b4f;color:#fff;text-align:center;}
+.recruit_st01 dd {padding:40px 7px;text-align:center;margin:0;}
+.recruit_st01 dd.space_plus{padding:50px 7px;}
+
+/* 전체연혁 */
+.history_inbox {margin:0;padding:0;}
+.history_year {padding-top:8px;margin:30px 0;background:url(/wp-content/uploads/2016/12/history_year_line.gif) no-repeat 0 5px;}
+.comp_carousel_item_top {overflow:hidden;padding-bottom:29px;}
+.comp_carousel_year {float:left;width:12%;}
+.comp_carousel_year div {padding-left:10px;width:86px;line-height:21px;background:#0d703a;color:#fff;font-size:18px;font-weight:bold;}
+.comp_carousel_left, .comp_carousel_right {float:left;width:44%;padding-right:50px;}
+.comp_list {color:#555;letter-spacing:-0.05em;line-height:20px;padding:0;margin:0;}
+.comp_list > li {padding:0 0 9px 44px;position:relative;color:#333;}
+.comp_list > li > strong {position:absolute;font-size:14px;top:2px;left:0;}
+.comp_list > p {line-height:24px;letter-spacing:-0.03em;color:#555;}
+
+.comp_carousel_item_bottom {overflow:hidden;padding:34px 0 29px;border-top:1px solid #ddd;}
+.comp_carousel_item_bottom .comp_carousel_year div {background:#888;}
+.clear{clear:both;}
+
+.history_page li.active .fusion-tab-heading, .history_page li.hover .fusion-tab-heading{color:#fff !important;}
+
+@media (max-width: 1023px) {
+.comp_carousel_year, .comp_carousel_left, .comp_carousel_right {float:none;width:100%;padding-right:0;}
+.comp_carousel_year {margin-bottom:20px;}
+}
+
+/* CEO포럼 소개 */
+.forum_info {margin:0 !important;}
+.forum_info_txt {width:75% !important;}
 
 /* Footer */
 .fusion-footer-widget-area .widget-title {color:#268b41 !important;}
@@ -50,10 +87,12 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-footer-widget-area ul li {border:none !important;font-size:1.05em;}
 .fusion-widget-area .widget_nav_menu li {padding:3px 0;color:#65686e;}
 .fusion-widget-area .widget_nav_menu li a:before{display:none;}
+#wrapper .fusion-widget-area .current-menu-item > a, #wrapper .fusion-widget-area .current_page_item > a {color:#bfbfbf !important;}
+#wrapper .fusion-widget-area .current-menu-item > a:hover, #wrapper .fusion-widget-area .current_page_item > a:hover {color:#fff !important;}
 
 /* Copyright */
 .copyright_logo {display:inline;float:left;width:14%;padding-top:30px;}
 .copyright_txt {display:inline;float:left;width:70%;}
-.copyright_icon {display:inline;float:left;width:10%;padding-top:25px;}
+.copyright_icon {display:inline;float:left;width:13%;padding-top:25px;}
 .copyright_icon ul {display:inline;list-style:none;}
 .copyright_icon ul li {float:left;padding:0 5px;}
