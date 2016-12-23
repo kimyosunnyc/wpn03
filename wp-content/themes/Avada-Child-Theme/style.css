@@ -20,8 +20,9 @@ Text Domain:  Avada
 
 /* 전체적용 */
 body, h1, h2, h3, h4, h5, h6, li, p{font-family:IcoMoon,'맑은고딕','MalgunGothic',"nanumbarungothic","nanumbarungothic",'Century Gothic',sans-serif !important;}
+
 ul{list-style:none;}
-ul, ol {margin:10px;padding:0;}
+ul, ol {margin:0 10px;padding:0;}
 li{margin:0;padding:0;}
 
 .list-st-1 li {text-indent: -1em; margin-left: 1em;}
@@ -30,13 +31,16 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 .fusion-title h2.title-heading-left {padding-right:20px;}
 .p_green {color:#009b4f;}
+.p_color1 {color:#1bad62;}
+
+.clear {clear:both;}
 
 /* 솔루션 */
 #page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
 .page_1_1_st01 p{padding:15px 10px;text-align:center;background:#005538;color:#fff;}
 .page_1_1_st01 ul {padding:15px 10px;}
 
-.page_tit {letter-spacing:-0.03em;}
+.page_tit {letter-spacing:-0.03em;background:url(/wp-content/uploads/2016/12/tit_icon.gif) top 10px left no-repeat;padding-left:40px;}
 .kstudio_tab h4.fusion-tab-heading{font-size:14px;}
 .ifrs_icon div.alignleft{margin-right:5px !important;}
 
@@ -65,21 +69,29 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .comp_list > li {padding:0 0 9px 44px;position:relative;color:#333;}
 .comp_list > li > strong {position:absolute;font-size:14px;top:2px;left:0;}
 .comp_list > p {line-height:24px;letter-spacing:-0.03em;color:#555;}
-
 .comp_carousel_item_bottom {overflow:hidden;padding:34px 0 29px;border-top:1px solid #ddd;}
 .comp_carousel_item_bottom .comp_carousel_year div {background:#888;}
-.clear{clear:both;}
-
 .history_page li.active .fusion-tab-heading, .history_page li.hover .fusion-tab-heading{color:#fff !important;}
-
-@media (max-width: 1023px) {
-.comp_carousel_year, .comp_carousel_left, .comp_carousel_right {float:none;width:100%;padding-right:0;}
-.comp_carousel_year {margin-bottom:20px;}
-}
 
 /* CEO포럼 소개 */
 .forum_info {margin:0 !important;}
 .forum_info_txt {width:75% !important;}
+
+/* 교육일정 상세페이지 */
+#tribe-events .fusion-events-featured-image {display:block;}
+#tribe-events .fusion-events-featured-image .tribe-events-event-image {margin-bottom:15px;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content {position:relative;background:none;padding:0 0 30px 0;border-bottom:1px solid #ddd;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content h2 {font-size:22px;margin-bottom:10px;color:#2f2f2f;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 {font-size:14px !important;color:#2f2f2f !important;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 span{font-size:14px !important;color:#2f2f2f !important;}
+
+/* 서비스 ERP */
+.service-cloud-erp-st1 {height: 250px; padding: 15px; background: #fff;}
+.service-erp-st1 {height: 330px; padding: 15px 5px; background: #fff;}
+
+/* K-branch */
+.fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {padding:50px 20px 20px;}
+#wrapper .post-content .content-box-heading {margin-bottom:15px;}
 
 /* Footer */
 .fusion-footer-widget-area .widget-title {color:#268b41 !important;}
@@ -96,3 +108,20 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .copyright_icon {display:inline;float:left;width:13%;padding-top:25px;}
 .copyright_icon ul {display:inline;list-style:none;}
 .copyright_icon ul li {float:left;padding:0 5px;}
+
+
+
+
+/* 모바일 */
+@media (max-width: 1023px) {
+.comp_carousel_year, .comp_carousel_left, .comp_carousel_right {float:none;width:100%;padding-right:0;}
+.comp_carousel_year {margin-bottom:20px;}
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+
+}
