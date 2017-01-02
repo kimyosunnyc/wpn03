@@ -33,6 +33,21 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .clear {clear:both;}
 .heading_space {margin:5px 0;}
 
+/* 메인 */
+#main_tab .nav-tabs li > a > h4 > strong {width:100% !important;display:block !important;font-size:28px;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-01 {background:#edf8f7 !important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-01 strong {color:#059ba1;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-02 {background:#fff6f5!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-02 strong {color:#ff7969;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-03 {background:#eff8ff!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-03 strong {color:#35a1fe;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-04 {background:#f8f5ff!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-04 strong {color:#9362f3;}
+
+#main_count .content-box-counter .unit {font-size:22px;color:#333;}
+#main_count .content-box-counter {margin-bottom:10px;}
+#main_count .counter-box-content {padding-top:20px;border-top:1px solid #c6c6c6;}
+
 /* 솔루션 */
 #page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
 .page_1_1_st01 p{padding:15px 10px;text-align:center;background:#005538;color:#fff;}
@@ -74,6 +89,9 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 /* CEO포럼 소개 */
 .forum_info {margin:0 !important;}
 .forum_info_txt {width:75% !important;}
+
+/* 영웨이 */
+.young-way-toggle .fusion-accordian .panel-title {font-size:15px !important;font-weight:normal !important;}
 
 /* 교육일정 상세페이지 */
 #tribe-events .fusion-events-featured-image {display:block;}
