@@ -13,6 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(document).ready(function(){
+        	$(".sb-toggle").click(function(){
+  			$( "#main_sb_01" ).toggle( "slide", { direction: "right" }, 500 );
+		});
+	});
+</script>
+
+
 	<?php $is_ipad = (bool) ( isset( $_SERVER['HTTP_USER_AGENT'] ) && false !== strpos( $_SERVER['HTTP_USER_AGENT'],'iPad' ) ); ?>
 
 	<?php
