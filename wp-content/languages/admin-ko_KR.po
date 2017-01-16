@@ -1,5 +1,5 @@
-# Translation of WordPress - Development - Administration in Korean
-# This file is distributed under the same license as the WordPress - Development - Administration package.
+# Translation of WordPress - 4.7.x - Administration in Korean
+# This file is distributed under the same license as the WordPress - 4.7.x - Administration package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2016-12-11 11:19:08+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/2.3.0-alpha\n"
 "Language: ko_KR\n"
-"Project-Id-Version: WordPress - Development - Administration\n"
+"Project-Id-Version: WordPress - 4.7.x - Administration\n"
 
 #. translators: default GMT offset or timezone string. Must be either a valid
 #. offset (-12 to 14) 	   or a valid timezone string (America/New_York). See
@@ -26,143 +26,143 @@ msgctxt "start of week"
 msgid "1"
 msgstr "0"
 
-#: wp-admin/about.php:223
+#: wp-admin/about.php:231
 msgid "Customize changesets make changes in the customizer persistent, like autosave drafts. They also make exciting new features like starter content possible."
 msgstr "사용자 정의 변경세트는 자동저장 임시글 처럼 사용자 정의하기에서 변경사항을 보존할 수 있습니다. 또한 시작 콘텐츠와 같은 새로운 흥미진진한 기능을 가능하게 합니다."
 
-#: wp-admin/about.php:222
+#: wp-admin/about.php:230
 msgid "Customize Changesets"
 msgstr "사용자 정의 변경세트"
 
 #. translators: 1: register_setting(), 2:
 #. https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/
-#: wp-admin/about.php:215
+#: wp-admin/about.php:223
 msgid "%1$s <a href=\"%2$s\">has been enhanced</a> to include type, description, and REST API visibility."
 msgstr "%1$s은(는) 타입, 설명, REST API 가시성을 포함하도록 <a href=\"%2$s\">향상됐습니다.</a> "
 
-#: wp-admin/about.php:211
+#: wp-admin/about.php:219
 msgid "Settings Registration API"
 msgstr "설정 등록 API"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
-#: wp-admin/about.php:205
+#: wp-admin/about.php:213
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
 msgstr "액션과 필터 내부에 존재하는 코드는 전체적으로 재작성됐으며 현대화 됐고 모든 버그를 수정했습니다."
 
-#: wp-admin/about.php:195
+#: wp-admin/about.php:203
 msgid "List tables, now with more than bulk edit and delete."
 msgstr "목록 테이블은 이제 일괄 편집과 삭제가 가능합니다."
 
-#: wp-admin/about.php:194
+#: wp-admin/about.php:202
 msgid "Custom Bulk Actions"
 msgstr "사용자 정의 일괄 작업"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
-#: wp-admin/about.php:188
+#: wp-admin/about.php:196
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
 msgstr "워드프레스 4.7은 테마 개발자를 위해 <a href=\"%s\">새로운 함수, 후크, 동작</a>을 포함합니다."
 
-#: wp-admin/about.php:184
+#: wp-admin/about.php:192
 msgid "More Theme API Goodies"
 msgstr "더많은 테마 API의 좋은 것들"
 
-#: wp-admin/about.php:181
+#: wp-admin/about.php:189
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
 msgstr "페이지 템플릿 기능을 모든 글 타입에 확장시켰기 때문에 테마 개발자는 워드프레스 템플릿 계층구조에 더 많은 유연성을 가질 수 있습니다."
 
-#: wp-admin/about.php:180
+#: wp-admin/about.php:188
 msgid "Post Type Templates"
 msgstr "글 타입 템플릿"
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:173
+#: wp-admin/about.php:181
 msgid "Even More Developer Happiness %s"
 msgstr "훨씬 더 많은 개발자의 즐거움 %s"
 
 #. translators: %s: https://developer.wordpress.org/rest-api/
-#: wp-admin/about.php:161
+#: wp-admin/about.php:169
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
 msgstr "콘텐츠 엔드포인트는 워드프레스 사이트에 명확하고 표준화된 인터페이스로 기계가 읽을 수 있는 외부 접근을 허용합니다. 이는 플러그인, 테마, 앱 등 아주 많은 것을 통해 사이트와 상호작용할 수 있는 새롭고 혁신적인 길을 열어줄 것입니다. 개발을 시작할 준비가 되셨나요? <a href=\"%s\">REST API 참조를 알아보세요.</a>"
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:164
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
 msgstr "워드프레스 4.7은 글, 댓글, 텀, 사용자, 테마, 설정에 REST API 엔드포인트를 제공합니다."
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:163
 msgid "Introducing REST API Content Endpoints"
 msgstr "REST API 콘텐츠 엔드포인트 소개"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:156
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
 msgstr "자신의 사이트가 하나의 언어로 돼있다는 것은 사이트를 관리하는 모든 사람이 자신의 관리자 화면을 해당 언어로만 사용해야 하는 것을 의미하지는 않습니다. 자신의 사이트에 더 많은 언어를 추가하면 사용자 언어 옵션이 사용자 프로필에 보일 것입니다."
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:154
 msgid "Dashboard in your language"
 msgstr "자신의 언어로 된 관리자 화면"
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:151
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
 msgstr "워드프레스 4.7에서는 문서 모음을 관리하기가 더 쉬워집니다. PDF 파일을 업로드하면 썸네일 이미지를 생성하며 다른 문서와 쉽게 구별할 수 있습니다."
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:149
 msgid "PDF Thumbnail Previews"
 msgstr "PDF 썸네일 미리보기"
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:141
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
 msgstr "가끔 자신의 사이트를 몇 가지 조작으로 완벽하게 만들고 싶을 때가 있을 겁니다. 워드프레스 4.7은 사용자 정의 CSS를 허용하며 변경사항이 사이트에 적용되는 것을 바로 확인할 수 있습니다. 실시간 미리보기는 페이지를 새로고침하는 번거로움이 없이 바로 작업할 수 있도록 합니다."
 
-#: wp-admin/about.php:128
+#: wp-admin/about.php:136
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
 msgstr "사이트의 많은 메뉴는 각 페이지로 가는 링크가 포함됩니다. 하지만 아직 아무런 페이지가 없다면 어떨까요? 변경사항을 저장하지도 못하고 사용자 정의하기에서 벗어나는 대신 이제는 메뉴를 생성하면서 새 페이지를 추가할 수 있습니다."
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:134
 msgid "Smoother Menu Building"
 msgstr "더 유연해진 메뉴 만들기"
 
-#: wp-admin/about.php:120
+#: wp-admin/about.php:128
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
 msgstr "움직이는 헤더 이미지와 같은 분위기 있는 비디오는 자신의 사이트를 돋보이게할 필요가 있을 겁니다. Twenty Seventeen 테마를 사용해보세요. 비디오 영감이 필요하신가요? 비디오 헤더가 있는 사이트를 검색해 다운로드와 사용이 가능한지 찾아보세요."
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:116
 msgid "Video Headers"
 msgstr "비디오 헤더"
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:113
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
 msgstr "실시간 미리보기하면서 아이콘이 나타나며 어떤 부분을 사용자 정의 할 수 있는지 보여줍니다. 이 아이콘을 클릭하면 편집 화면으로 바로 이동합니다. 시작 콘텐츠와 더불어 사이트의 사용자 정의하는 것이 이전보다 더 빨라졌습니다."
 
-#: wp-admin/about.php:93
+#: wp-admin/about.php:101
 msgid "Edit Shortcuts"
 msgstr "편집 단축키"
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:82
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
 msgstr "사이트를 만드는 확고한 기본을 제공하기 위해 개별 테마는 시작 콘텐츠를 제공하며 새로운 사이트를 사용자 정의하기위해 이동할 때 나타납니다. 시작 콘텐츠의 범위는 비지니스 정보 위젯을 최적의 장소에 배치하는 것부터 아름다운 이미지가 있는 전면 페이지로 이동이 가능한 소셜 아이콘 링크가 있는 예제 메뉴를 제공하는 것까지 있습니다. 걱정하지 마세요. 초기 테마 설정을 저장하고 발행할 준비가 되기 전까지는 실제 사이트에 아무것도 나타나지 않습니다."
 
-#: wp-admin/about.php:73
+#: wp-admin/about.php:81
 msgid "Theme Starter Content"
 msgstr "테마 시작 콘텐츠"
 
-#: wp-admin/about.php:68
+#: wp-admin/about.php:76
 msgid "WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow."
 msgstr "워드프레스 4.7은 사용자 정의하기에 새 기능을 추가했으며 테마의 초기 설정을 마치는데 도움이 됩니다. 방해받지 않는 하나의 작업 흐름에서 모든 변경사항의 비파괴적인 실시간 미리보기가 가능합니다."
 
-#: wp-admin/about.php:67
+#: wp-admin/about.php:75
 msgid "Your Site, Your Way"
 msgstr "자신의 사이트를 자신의 방법으로"
 
-#: wp-admin/about.php:61
+#: wp-admin/about.php:69
 msgid "Twenty Seventeen focuses on business sites and features a customizable front page with multiple sections. Personalize it with widgets, navigation, social menus, a logo, custom colors, and more. Our default theme for 2017 works great in many languages, on any device, and for a wide range of users."
 msgstr "Twenty Seventeen은 비지니스 사이트에 중점을 뒀으며 다중 영역이 있는 사용자 정의 가능한 전면 페이지 기능이 있습니다. 위젯, 내비게이션, 소셜 메뉴, 로고, 사용자 정의 색상 등으로 개성있게 만드세요. 2017년을 위한 우리의 기본 테마는 많은 언어, 모든 기기, 아주 다양한 사용자를 위해 훌륭하게 작동합니다."
 
-#: wp-admin/about.php:55
+#: wp-admin/about.php:63
 msgid "A brand new default theme brings your site to life with immersive featured images and video headers."
 msgstr "새로운 기본 테마는 몰입할 수 있는 특성 이미지와 비디오 헤더로 인해 사이트에 생명을 불어넣을 것입니다."
 
-#: wp-admin/about.php:54
+#: wp-admin/about.php:62
 msgid "Presenting Twenty Seventeen"
 msgstr "Twenty Seventeen 소개"
 
@@ -314,9 +314,9 @@ msgstr "원본"
 #: wp-admin/plugin-editor.php:157 wp-admin/plugin-install.php:99
 #: wp-admin/plugins.php:410 wp-admin/revision.php:121
 #: wp-admin/theme-editor.php:43 wp-admin/theme-install.php:115
-#: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:574
+#: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:576
 #: wp-admin/upload.php:67 wp-admin/upload.php:211 wp-admin/user-edit.php:56
-#: wp-admin/user-new.php:214 wp-admin/users.php:69 wp-admin/widgets.php:75
+#: wp-admin/user-new.php:214 wp-admin/users.php:69 wp-admin/widgets.php:77
 msgid "<a href=\"https://wordpress.org/support/\">Support Forums</a>"
 msgstr "<a href=\"https://wordpress.org/support/\">지원 포럼</a>"
 
@@ -440,9 +440,9 @@ msgstr "죄송합니다. 이 변경세트를 편집할 권한이 없습니다."
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "죄송합니다. 이 사이트의 테마를 업데이트 할 권한이 없습니다."
 
-#: wp-admin/update-core.php:23 wp-admin/update-core.php:635
-#: wp-admin/update-core.php:663 wp-admin/update-core.php:696
-#: wp-admin/update-core.php:731
+#: wp-admin/update-core.php:23 wp-admin/update-core.php:637
+#: wp-admin/update-core.php:665 wp-admin/update-core.php:698
+#: wp-admin/update-core.php:733
 msgid "Sorry, you are not allowed to update this site."
 msgstr "죄송합니다. 이 사이트를 업데이트 할 권한이 없습니다."
 
@@ -484,7 +484,7 @@ msgstr "죄송합니다. 이 사이트의 등록되지 않은 설정을 수정�
 msgid "Sorry, you are not allowed to manage options for this site."
 msgstr "죄송합니다. 이 사이트의 옵션을 관리할 권한이 없습니다."
 
-#: wp-admin/nav-menus.php:589 wp-admin/widgets.php:360
+#: wp-admin/nav-menus.php:589 wp-admin/widgets.php:362
 msgid "Manage with Live Preview"
 msgstr "실시간 미리보기로 관리하기"
 
@@ -839,7 +839,7 @@ msgstr "미디어 파일 업데이트됨."
 #: wp-admin/includes/theme.php:208 wp-admin/includes/update.php:385
 #: wp-admin/includes/update.php:396 wp-admin/includes/update.php:407
 #: wp-admin/includes/update.php:530 wp-admin/includes/update.php:541
-#: wp-admin/includes/update.php:552 wp-admin/update-core.php:285
+#: wp-admin/includes/update.php:552 wp-admin/update-core.php:287
 msgid "View %1$s version %2$s details"
 msgstr "%1$s 버전 %2$s 상세 보기"
 
@@ -951,7 +951,7 @@ msgstr "테마 zip 파일"
 msgid "Attach to existing content"
 msgstr "기존의 콘텐츠에 붙이기"
 
-#: wp-admin/includes/post.php:1454
+#: wp-admin/includes/post.php:1425
 msgid "Click the image to edit or update"
 msgstr "편집 또는 업데이트 할 이미지를 클릭하세요"
 
@@ -1061,7 +1061,7 @@ msgid "Another update is currently in progress."
 msgstr "다른 업데이트가 현재 진행중입니다."
 
 #: wp-admin/includes/class-plugin-upgrader-skin.php:46
-#: wp-admin/update-core.php:684 wp-admin/update-core.php:718
+#: wp-admin/update-core.php:686 wp-admin/update-core.php:720
 msgid "Update progress"
 msgstr "업데이트 진행"
 
@@ -1221,7 +1221,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "%s에 오신 것을 환영합니다. 이것은 첫번째 글입니다. 수정하거나 삭제하신 후 블로깅을 시작하세요."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:258
+#: wp-admin/about.php:266
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>버전 %s</strong> 하나의 보안 문제 처리함."
 
@@ -1238,15 +1238,15 @@ msgstr "<a href=\"%s\">Gravatar</a>에서 프로필 사진을 변경할 수 있�
 msgid "Profile Picture"
 msgstr "프로필 사진"
 
-#: wp-admin/about.php:255
+#: wp-admin/about.php:263
 msgid "Maintenance and Security Releases"
 msgstr "유지보수 및 보안 릴리즈"
 
-#: wp-admin/about.php:252
+#: wp-admin/about.php:260
 msgid "Security Releases"
 msgstr "보안 릴리즈"
 
-#: wp-admin/about.php:249
+#: wp-admin/about.php:257
 msgid "Maintenance Releases"
 msgstr "유지 관리 릴리즈"
 
@@ -1393,11 +1393,11 @@ msgstr "%s 디렉토리의 파일들이 자동으로 실행됩니다."
 msgid "Sorry, you are not allowed to manage these options."
 msgstr "죄송합니다. 이 옵션을 관리할 권한이 없습니다."
 
-#: wp-admin/widgets.php:436
+#: wp-admin/widgets.php:438
 msgid "This will clear all items from the inactive widgets list. You will not be able to restore any customizations."
 msgstr "이 작업은 비활성 위젯 목록에서 모든 아이템을 삭제합니다. 이 작업후에 사용자 정의 내용을 복구할 수 없습니다."
 
-#: wp-admin/widgets.php:426
+#: wp-admin/widgets.php:428
 msgid "Clear Inactive Widgets"
 msgstr "비활성 위젯 제거"
 
@@ -1512,11 +1512,11 @@ msgstr "버전 %s 가져오기"
 msgid "Toggle panel: %s"
 msgstr "패널 토글: %s"
 
-#: wp-admin/includes/post.php:1651
+#: wp-admin/includes/post.php:1622
 msgid "Saving revision&hellip;"
 msgstr "리비전 저장중&hellip;"
 
-#: wp-admin/includes/post.php:1380
+#: wp-admin/includes/post.php:1351
 msgid "Edit permalink"
 msgstr "고유주소 편집"
 
@@ -1607,24 +1607,24 @@ msgstr "역할 없음"
 msgid "An error occurred while updating %1$s: %2$s"
 msgstr "%1$s 업데이트 중 에러가 발생했습니다: %2$s"
 
-#: wp-admin/includes/class-wp-screen.php:1226
+#: wp-admin/includes/class-wp-screen.php:1227
 msgid "View Mode"
 msgstr "모드 보기"
 
-#: wp-admin/includes/class-wp-screen.php:1179
+#: wp-admin/includes/class-wp-screen.php:1180
 msgid "Pagination"
 msgstr "페이지 처리"
 
-#: wp-admin/includes/class-wp-screen.php:1119
+#: wp-admin/includes/class-wp-screen.php:1120
 msgid "%s column"
 msgid_plural "%s columns"
 msgstr[0] "%s 열"
 
-#: wp-admin/includes/class-wp-screen.php:1030
+#: wp-admin/includes/class-wp-screen.php:1031
 msgid "Boxes"
 msgstr "박스"
 
-#: wp-admin/includes/class-wp-screen.php:921
+#: wp-admin/includes/class-wp-screen.php:922
 msgid "Additional settings"
 msgstr "추가적인 구성"
 
@@ -2011,7 +2011,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Appearance_Background_Screen\">사
 msgid "<a href=\"https://codex.wordpress.org/Plugins_Editor_Screen\">Documentation on Editing Plugins</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Plugins_Editor_Screen\">플러그인 편집에 관한 문서</a>"
 
-#: wp-admin/widgets.php:74
+#: wp-admin/widgets.php:76
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Widgets_Screen\">Documentation on Widgets</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Appearance_Widgets_Screen\">위젯에 관한 문서</a>"
 
@@ -2075,7 +2075,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\">
 msgid "<a href=\"https://codex.wordpress.org/Posts_Add_New_Screen\">Documentation on Writing and Editing Posts</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Posts_Add_New_Screen\">글 쓰기 및 편집에 관한 문서</a>"
 
-#: wp-admin/update-core.php:573
+#: wp-admin/update-core.php:575
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">Documentation on Updating WordPress</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">워드프레스 업데이트에 관한 문서</a>"
 
@@ -2218,7 +2218,7 @@ msgstr "설치할 수 없습니다. <a href=\"https://codex.wordpress.org/Versio
 msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "설치할 수 없습니다. <a href=\"https://codex.wordpress.org/Version_%1$s\">워드프레스 %1$s</a>은(는) MySQL 버전이 %2$s 이거나 이상이어야 합니다. %3$s 버전을 사용중입니다."
 
-#: wp-admin/widgets.php:79
+#: wp-admin/widgets.php:81
 msgid "The theme you are currently using isn&#8217;t widget-aware, meaning that it has no sidebars that you are able to change. For information on making your theme widget-aware, please <a href=\"https://codex.wordpress.org/Widgetizing_Themes\">follow these instructions</a>."
 msgstr "이 메시지를 보고 계신다면 사용하는 테마가 위젯을 사용하지 않기 때문입니다. 다시 말해서 수정할 사이드바가 없다는 이야기입니다. 테마를 위젯을 사용할 수 있게 만드는 방법을 원하신다면 <a href=\"https://codex.wordpress.org/Widgetizing_Themes\">이 절차</a>를 따라하세요"
 
@@ -2376,7 +2376,7 @@ msgstr "글 옵션 감추기"
 msgid "In the editing area the Tab key enters a tab character. To move below this area by pressing Tab, press the Esc key followed by the Tab key. In some cases the Esc key will need to be pressed twice before the Tab key will allow you to continue."
 msgstr "편집 영역에서 탭 키는 탭 글자가 입력됩니다. 탭 키를 눌러 이 영역 아래로 이동하려면 탭 키를 누른 다음 Esc 키를 누르세요. 어떤 경우는 탭 키를 이용해 계속 진행하려면 Esc 키를 두 번 눌러야 할 때도 있습니다."
 
-#: wp-admin/includes/class-wp-screen.php:1139
+#: wp-admin/includes/class-wp-screen.php:1140
 msgid "Number of items per page:"
 msgstr "페이지당 아이템 수:"
 
@@ -2477,7 +2477,7 @@ msgstr "끌어오기 열기"
 msgid "You can log out of other devices, such as your phone or a public computer, by clicking the Log Out Everywhere Else button."
 msgstr "다른 모든 세션에서 로그아웃 버튼을 클릭해 휴대폰이나 공용 컴퓨터와 같은 다른 기기에서 로그아웃 할 수 있습니다."
 
-#: wp-admin/update-core.php:419
+#: wp-admin/update-core.php:421
 msgid "New translations are available."
 msgstr "새로운 번역이 가능합니다."
 
@@ -2777,7 +2777,7 @@ msgstr "언어를 설정할 수 있으며 번역 파일이 자동으로 다운�
 msgid "You cannot delete a theme while it has an active child theme."
 msgstr "활성 상태의 자식 테마가 있는 테마는 삭제 할 수 없습니다."
 
-#: wp-admin/includes/class-wp-screen.php:923
+#: wp-admin/includes/class-wp-screen.php:924
 msgid "Enable full-height editor and distraction-free functionality."
 msgstr "전체 높이 편집기 및 글 집중 모드 기능 활성화."
 
@@ -2858,7 +2858,7 @@ msgctxt "theme editor"
 msgid "Editor"
 msgstr "테마 편집기"
 
-#: wp-admin/includes/class-wp-screen.php:1046
+#: wp-admin/includes/class-wp-screen.php:1047
 msgctxt "Welcome panel"
 msgid "Welcome"
 msgstr "환영합니다."
@@ -3203,27 +3203,27 @@ msgstr "형식"
 msgid "Search installed themes..."
 msgstr "설치된 테마 검색..."
 
-#: wp-admin/update-core.php:562
+#: wp-admin/update-core.php:564
 msgid "<strong>Translations</strong> &mdash; The files translating WordPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button."
 msgstr "<strong>번역</strong> &mdash; 워드프레스 번역 파일은 번역이 업데이트 될 때마다 적용됩니다. 하지만 파일이 최신이 아닌 경우 <strong>click the &#8220;번역 업데이트&#8221;</strong> 버튼을 클릭할 수 있습니다."
 
-#: wp-admin/update-core.php:558
+#: wp-admin/update-core.php:560
 msgid "In most cases, WordPress will automatically apply maintenance and security updates in the background for you."
 msgstr "대부분의 경우 워드프레스는 관리 및 보안 업데이트를 보이지 않게 자동으로 적용합니다."
 
-#: wp-admin/update-core.php:558
+#: wp-admin/update-core.php:560
 msgid "<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available."
 msgstr "<strong>워드프레스</strong> &mdash; 워드프레스 설치 업데이트는 간단한 원 클릭 과정입니다: 새 버전이 가능하다는 알림이 있으면 <strong>&#8220;지금 업데이트&#8221; 버튼을 클릭하기만 하면 됩니다</strong>."
 
-#: wp-admin/update-core.php:550
+#: wp-admin/update-core.php:552
 msgid "If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu."
 msgstr "업데이트가 가능할 경우 툴바와 내비게이션 메뉴에 나타나는 알림을 볼 수 있습니다."
 
-#: wp-admin/update-core.php:559
+#: wp-admin/update-core.php:561
 msgid "<strong>Themes and Plugins</strong> &mdash; To update individual themes or plugins from this screen, use the checkboxes to make your selection, then <strong>click on the appropriate &#8220;Update&#8221; button</strong>. To update all of your themes or plugins at once, you can check the box at the top of the section to select all before clicking the update button."
 msgstr "<strong>테마와 플러그인</strong> &mdash; 이 화면에서 개별 테마나 플러그인을 업데이트 하려면 선택을 위해 체크박스를 사용하세요. 그런 다음 <strong>적절한 &#8220;업데이트&#8221; 버튼을 클릭하세요</strong>. 한번에 모든 테마나 플러그인을 업데이트 하려면 업데이트 버튼을 클릭하기 전에 모두 선택하기 위해 선택 상단에 있는 체크박스에 체크할 수 있습니다."
 
-#: wp-admin/update-core.php:549
+#: wp-admin/update-core.php:551
 msgid "On this screen, you can update to the latest version of WordPress, as well as update your themes, plugins, and translations from the WordPress.org repositories."
 msgstr "이 화면에서 워드프레스 최신 버전으로 업데이트 할 수 있습니다. 또한 WordPress.org의 저장소로부터 테마, 플러그인, 번역을 업데이트 할 수 있습니다."
 
@@ -3317,7 +3317,7 @@ msgstr "활성화 및 실시간 미리보기 버튼을 보려면 마우스를 �
 msgid "This screen is used for managing your installed themes. Aside from the default theme(s) included with your WordPress installation, themes are designed and developed by third parties."
 msgstr "이 화면은 설치한 테마를 관리하는데 사용됩니다. 워드프레스 설치에 포함된 기본 테마를 제외한 테마들은 제 3자가 디자인하고 개발했습니다."
 
-#: wp-admin/widgets.php:390
+#: wp-admin/widgets.php:392
 msgid "To activate a widget drag it to a sidebar or click on it. To deactivate a widget and delete its settings, drag it back."
 msgstr "위젯을 활성화 하려면 사이드바로 끌어놓기 하거나 클릭하세요. 위젯을 비활성화 하고 설정을 제거하려면 원위치로 끌어놓으세요."
 
@@ -3370,7 +3370,7 @@ msgstr "다음 테마가 성공적으로 업데이트 됐습니다:"
 msgid "The following plugins were successfully updated:"
 msgstr "다음 플러그인이 성공적으로 업데이트 됐습니다:"
 
-#: wp-admin/widgets.php:504
+#: wp-admin/widgets.php:506
 msgid "Add Widget"
 msgstr "위젯 추가"
 
@@ -3522,11 +3522,11 @@ msgstr "워드프레스 %s도 이제 가능합니다."
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "몇 개의 파일을 복사할 수 없기 때문에 업데이트는 설치할 수 없습니다. 이것은 보통 파일의 퍼미션이 서로 다르기 때문입니다."
 
-#: wp-admin/update-core.php:410
+#: wp-admin/update-core.php:412
 msgid "Your translations are all up to date."
 msgstr "번역이 모두 업데이트 된 상태입니다."
 
-#: wp-admin/update-core.php:409 wp-admin/update-core.php:417
+#: wp-admin/update-core.php:411 wp-admin/update-core.php:419
 msgid "Translations"
 msgstr "번역"
 
@@ -3534,11 +3534,11 @@ msgstr "번역"
 msgid "Future security updates will be applied automatically."
 msgstr "향후의 보안 업데이트는 자동으로 적용될 것입니다."
 
-#: wp-admin/includes/post.php:1614
+#: wp-admin/includes/post.php:1585
 msgid "If you take over, %s will be blocked from continuing to edit."
 msgstr "당신이 넘겨받는다면 %s는 계속 편집하는 것이 차단될 것입니다."
 
-#: wp-admin/includes/post.php:1612
+#: wp-admin/includes/post.php:1583
 msgid "This content is currently locked."
 msgstr "이 콘텐츠는 현재 잠금 상태입니다."
 
@@ -3567,7 +3567,7 @@ msgid "If you experience any issues or need support, the volunteers in the WordP
 msgstr "문제가 발생하거나 지원이 필요하면 WordPress.org 지원 포럼의 자원 봉사자들이 도움이 될 수도 있습니다."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:699
-#: wp-admin/update-core.php:550
+#: wp-admin/update-core.php:552
 msgid "Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers."
 msgstr "사이트의 업데이트를 유지하는 것은 보안을 위해 중요합니다. 또한 자신을 위해서나 방문자를 위해서도 인터넷을 더 안전하게 만듭니다."
 
@@ -3633,7 +3633,7 @@ msgid "Updating translations for %1$s (%2$s)&#8230;"
 msgstr "%1$s (%2$s)의 번역 업데이트&#8230;"
 
 #: wp-admin/includes/class-language-pack-upgrader-skin.php:29
-#: wp-admin/update-core.php:421 wp-admin/update-core.php:740
+#: wp-admin/update-core.php:423 wp-admin/update-core.php:742
 msgid "Update Translations"
 msgstr "번역 업데이트"
 
@@ -4105,7 +4105,7 @@ msgstr "이 화면에서 할 수 있는 것:"
 msgid "This screen is used for managing your custom navigation menus."
 msgstr "이 화면은 사용자 내비게이션 메뉴를 관리하는데 사용됩니다."
 
-#: wp-admin/includes/post.php:1652
+#: wp-admin/includes/post.php:1623
 msgid "Your latest changes were saved as a revision."
 msgstr "최근 변경이 리비전으로 저장됐습니다."
 
@@ -4200,7 +4200,7 @@ msgstr "임시글이 %1$s %2$s에 생성됐습니다"
 msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "이 아이템을 휴지통으로 이동할 수 없습니다. %s가 현재 편집 중입니다."
 
-#: wp-admin/includes/post.php:1637
+#: wp-admin/includes/post.php:1608
 msgid "Take over"
 msgstr "이어받기"
 
@@ -4281,7 +4281,7 @@ msgstr "링크 매니저를 사용하려고 찾는 중이라면 <a href=\"%s\">�
 msgid "Manage <a href=\"%1$s\">widgets</a> or <a href=\"%2$s\">menus</a>"
 msgstr "<a href=\"%1$s\">위젯</a> 또는 <a href=\"%2$s\">메뉴</a> 관리하기"
 
-#: wp-admin/widgets.php:69
+#: wp-admin/widgets.php:71
 msgid "When changing themes, there is often some variation in the number and setup of widget areas/sidebars and sometimes these conflicts make the transition a bit less smooth. If you changed themes and seem to be missing widgets, scroll down on this screen to the Inactive Widgets area, where all of your widgets and their settings will have been saved."
 msgstr "테마를 변경 했을 때 위젯 영역/사이드바의 수나 설정에 변화가 있을 수 있습니다. 이런 경우 이전 설정과 충돌로 인해서 원활하지 않는 변경이 발생합니다. 테마를 변경했는데 위젯이 안보인다면 이 화면에서 스크롤해서 내리면 비활성화 위젯 영역이 있습니다. 그곳에 모든 위젯과 설정이 저장돼있습니다."
 
@@ -4455,7 +4455,7 @@ msgstr "검색 엔진 접근 여부"
 msgid "You can also control the display of your content in RSS feeds, including the maximum numbers of posts to display and whether to show full text or a summary."
 msgstr "표시할 글의 최대 숫자와 전체 글 또는 요약 글 표시와 같은 RSS 피드에서 글의 표시를 제어할 수도 있습니다. "
 
-#: wp-admin/includes/update-core.php:1227 wp-admin/update-core.php:499
+#: wp-admin/includes/update-core.php:1227 wp-admin/update-core.php:501
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "워드프레스 %1$s에 오신 것을 환영합니다. \"워드프레스 소개\" 화면으로 안내될 것입니다. 아닌 경우 <a href=\"%2$s\">여기</a>를 클릭하세요."
 
@@ -4557,7 +4557,7 @@ msgstr "죄송합니다. 할당 용량을 다 사용했습니다. 파일을 더 
 msgid "Contextual Help Tab"
 msgstr "문맥 도움말 탭"
 
-#: wp-admin/includes/class-wp-screen.php:978
+#: wp-admin/includes/class-wp-screen.php:979
 msgid "Screen Options Tab"
 msgstr "화면 옵션 탭"
 
@@ -4646,7 +4646,7 @@ msgstr "태그를 <a href=\"%s\">태그에서 카테고리 변환기</a>에 의�
 #: wp-admin/includes/class-wp-posts-list-table.php:835
 #: wp-admin/includes/class-wp-terms-list-table.php:339
 #: wp-admin/includes/class-wp-users-list-table.php:432
-#: wp-admin/update-core.php:297 wp-admin/update-core.php:368
+#: wp-admin/update-core.php:299 wp-admin/update-core.php:370
 msgid "Select %s"
 msgstr "%s 선택"
 
@@ -4817,8 +4817,8 @@ msgstr "<strong>에러</strong>: 별명을 입력해주세요."
 
 #: wp-admin/includes/class-wp-list-table.php:1069
 #: wp-admin/includes/nav-menu.php:575 wp-admin/includes/nav-menu.php:774
-#: wp-admin/update-core.php:246 wp-admin/update-core.php:322
-#: wp-admin/update-core.php:354 wp-admin/update-core.php:393
+#: wp-admin/update-core.php:246 wp-admin/update-core.php:324
+#: wp-admin/update-core.php:356 wp-admin/update-core.php:395
 msgid "Select All"
 msgstr "모두 선택"
 
@@ -5349,26 +5349,26 @@ msgid "Contributing Developers"
 msgstr "기여하는 개발자들"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:263
+#: wp-admin/about.php:271
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong>이(가) %2$s 버그를 해결함."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:271
+#: wp-admin/about.php:48 wp-admin/about.php:279
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 몇가지 보안 문제를 처리했고 %2$s 버그를 수리했습니다."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:275
+#: wp-admin/about.php:50 wp-admin/about.php:283
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "더 많은 정보는, <a href=\"%s\">릴리즈 노트</a>를 참조하세요."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:267
+#: wp-admin/about.php:275
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 보안 문제와 %2$s 버그를 처리했습니다."
@@ -5378,15 +5378,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "워드프레스 알림판에 오신 것을 환영합니다! 이 화면은 사이트에 로그인 했을 때 보여지며 워드프레스의 모든 사이트 관리 기능에 접근하게 해줍니다. 어떤 화면에서든 우측 상단의 도움말 탭을 클릭해서 도움을 얻을 수 있습니다"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:260
+#: wp-admin/about.php:268
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>버전 %s</strong> 보안 문제를 처리했습니다."
 
-#: wp-admin/about.php:248
+#: wp-admin/about.php:256
 msgid "Maintenance Release"
 msgstr "관리 릴리즈"
 
-#: wp-admin/about.php:251
+#: wp-admin/about.php:259
 msgid "Security Release"
 msgstr "보안 릴리즈"
 
@@ -5394,7 +5394,7 @@ msgstr "보안 릴리즈"
 msgid "What&#8217;s New"
 msgstr "새로운 것"
 
-#: wp-admin/about.php:254
+#: wp-admin/about.php:47 wp-admin/about.php:262
 msgid "Maintenance and Security Release"
 msgstr "관리 보안 릴리즈"
 
@@ -5402,11 +5402,11 @@ msgstr "관리 보안 릴리즈"
 msgid "This screen allows you to choose your permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "이 화면은 기본 고유주소 구조를 선택할 수 있게 해줍니다. 일반 설정에서 선택하거나 사용자 정의 URL 구조를 만들 수 있습니다."
 
-#: wp-admin/includes/update-core.php:1228 wp-admin/update-core.php:500
+#: wp-admin/includes/update-core.php:1228 wp-admin/update-core.php:502
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "워드프레스 %1$s에 오신 것을 환영합니다. <a href=\"%2$s\">자세히 보기</a>."
 
-#: wp-admin/about.php:234
+#: wp-admin/about.php:242
 msgid "Return to Updates"
 msgstr "업데이트로 돌아가기"
 
@@ -5450,7 +5450,7 @@ msgstr "또한 한번에 여러 개의 글을 편집하거나 휴지통으로 �
 msgid "This screen provides access to all of your posts. You can customize the display of this screen to suit your workflow."
 msgstr "이 화면은 모든 글에 대한 접근을 제공합니다. 작업 흐름에 맞게 이 화면의 표시를 사용자 정의 할 수 있습니다."
 
-#: wp-admin/update-core.php:567
+#: wp-admin/update-core.php:569
 msgid "How to Update"
 msgstr "업데이트 방법"
 
@@ -5554,15 +5554,15 @@ msgstr "이 화면은 글/페이지의 댓글과 링크를 관리하거나 나�
 msgid "You can change your password, turn on keyboard shortcuts, change the color scheme of your WordPress administration screens, and turn off the WYSIWYG (Visual) editor, among other things. You can hide the Toolbar (formerly called the Admin Bar) from the front end of your site, however it cannot be disabled on the admin screens."
 msgstr "비밀번호를 변경할 수 있고, 키보드 단축키를 켤 수 있으며, 워드프레스 관리 화면의 색 구성을 변경할 수 있고, 위지윅(비주얼) 편집기를 끌 수 있습니다. 사이트의 프론트 엔드에서 툴바를 (이전 관리 바라고 불림) 숨길 수 있지만 그것은 관리자 화면에서 비활성화할 수 없습니다."
 
-#: wp-admin/widgets.php:98
+#: wp-admin/widgets.php:100
 msgid "This sidebar is no longer available and does not show anywhere on your site. Remove each of the widgets below to fully remove this inactive sidebar."
 msgstr "이 사이드바는 더이상 사용 가능하지 않으며 사이트의 어떤 곳에도 나타나지 않습니다. 아래의  개별 위젯을 제거해 이 비활성 사이드바를 완전히 제거하세요."
 
-#: wp-admin/widgets.php:95
+#: wp-admin/widgets.php:97
 msgid "Inactive Sidebar (not used)"
 msgstr "비활성화 사이드바 (사용되지 않음)"
 
-#: wp-admin/widgets.php:66
+#: wp-admin/widgets.php:68
 msgid "Missing Widgets"
 msgstr "빠진 위젯"
 
@@ -5570,7 +5570,7 @@ msgstr "빠진 위젯"
 msgid "You can assign keywords to your posts using <strong>tags</strong>. Unlike categories, tags have no hierarchy, meaning there&#8217;s no relationship from one tag to another."
 msgstr "<strong>태그</strong>를 사용하여 글에 키워드를 지정할 수 있습니다. 카테고리와는 달리, 태그는 계층 구조가 없기 때문에 각 태그들은 관계가 없습니다."
 
-#: wp-admin/widgets.php:58
+#: wp-admin/widgets.php:60
 msgid "Removing and Reusing"
 msgstr "제거 및 재사용"
 
@@ -5686,11 +5686,11 @@ msgstr "add_meta_box()를 사용하기 위해서 wp-admin/includes/template.php�
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s 사용을 환영합니다"
 
-#: wp-admin/about.php:234
+#: wp-admin/about.php:242
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "대시보드 &rarr; 업데이트로 돌아가기"
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:245
 msgid "Go to Dashboard &rarr; Home"
 msgstr "대시보드 &rarr; 홈으로 가기"
 
@@ -5787,7 +5787,7 @@ msgid "Successfully repaired the %s table."
 msgstr "%s 테이블을 성공적으로 수리했습니다."
 
 #. translators: %s: plugin version
-#: wp-admin/update-core.php:287
+#: wp-admin/update-core.php:289
 msgid "View version %s details."
 msgstr "버전 %1$s 세부사항 보기"
 
@@ -5845,9 +5845,9 @@ msgstr "에러: 임시 글에 댓글을 달고 있습니다."
 #: wp-admin/plugin-install.php:80 wp-admin/plugins.php:385
 #: wp-admin/revision.php:115 wp-admin/theme-editor.php:25
 #: wp-admin/theme-install.php:98 wp-admin/themes.php:82
-#: wp-admin/update-core.php:554 wp-admin/upload.php:48 wp-admin/upload.php:189
+#: wp-admin/update-core.php:556 wp-admin/upload.php:48 wp-admin/upload.php:189
 #: wp-admin/user-edit.php:49 wp-admin/user-new.php:194 wp-admin/users.php:31
-#: wp-admin/widgets.php:51
+#: wp-admin/widgets.php:53
 msgid "Overview"
 msgstr "개요"
 
@@ -5897,7 +5897,7 @@ msgstr "모든 사용자"
 #: wp-admin/includes/class-wp-users-list-table.php:412
 #: wp-admin/includes/media.php:1501 wp-admin/includes/meta-boxes.php:916
 #: wp-admin/includes/template.php:561 wp-admin/includes/widgets.php:253
-#: wp-admin/themes.php:340 wp-admin/themes.php:486 wp-admin/widgets.php:318
+#: wp-admin/themes.php:340 wp-admin/themes.php:486 wp-admin/widgets.php:320
 msgid "Delete"
 msgstr "삭제"
 
@@ -5921,9 +5921,9 @@ msgstr "사용자 추가하기"
 #: wp-admin/plugin-editor.php:154 wp-admin/plugin-install.php:97
 #: wp-admin/plugins.php:408 wp-admin/revision.php:119
 #: wp-admin/theme-editor.php:38 wp-admin/theme-install.php:113
-#: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:572
+#: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:574
 #: wp-admin/upload.php:65 wp-admin/upload.php:209 wp-admin/user-edit.php:54
-#: wp-admin/user-new.php:212 wp-admin/users.php:66 wp-admin/widgets.php:73
+#: wp-admin/user-new.php:212 wp-admin/users.php:66 wp-admin/widgets.php:75
 msgid "For more information:"
 msgstr "추가 정보:"
 
@@ -6229,7 +6229,7 @@ msgstr "워드프레스 %s의 핵심 참여자"
 msgid "Cofounder, Project Lead"
 msgstr "공동 창립자, 프로젝트 리더"
 
-#: wp-admin/widgets.php:386
+#: wp-admin/widgets.php:388
 msgctxt "removing-widget"
 msgid "Deactivate"
 msgstr "비활성화"
@@ -6310,7 +6310,7 @@ msgstr "업로드된 이미지들"
 msgid "<strong>Random:</strong> Show a different image on each page."
 msgstr "<strong>랜덤:</string> 각 페이지에 다른 이미지 보여주기."
 
-#: wp-admin/includes/class-wp-screen.php:1113 wp-admin/includes/theme.php:237
+#: wp-admin/includes/class-wp-screen.php:1114 wp-admin/includes/theme.php:237
 #: wp-admin/includes/theme.php:302 wp-admin/index.php:62
 msgid "Layout"
 msgstr "레이아웃"
@@ -6534,7 +6534,7 @@ msgstr "이미지를 자르려면 클릭을 하고 (자르기 아이콘이 이�
 msgid "Remember to click Update Media to save metadata entered or changed."
 msgstr "입력한 메타정보나 변경사항을 저장하기 위해 미디어 업데이트 버튼을 클릭하는 것을 기억하세요."
 
-#: wp-admin/widgets.php:54
+#: wp-admin/widgets.php:56
 msgid "The Available Widgets section contains all the widgets you can choose from. Once you drag a widget into a sidebar, it will open to allow you to configure its settings. When you are happy with the widget settings, click the Save button and the widget will go live on your site. If you click Delete, it will remove the widget."
 msgstr "사용할 수 있는 위젯 섹션에는 선택할 수 있는 모든 위젯들이 포함되어 있습니다. 사이드바로 위젯을 끌면 위젯영역이 펼쳐져서 설정을 구성할 수 있게 해줍니다. 위젯 설정이 마음에 든다면 저장 버튼을 누르면 위젯이 사이트에 표시됩니다. 만약 삭제 버튼을 누르면 위젯이 삭제됩니다."
 
@@ -6552,7 +6552,7 @@ msgstr "%1$s &lsaquo; %2$s &#8212; 워드프레스"
 msgid "Search Installed Themes"
 msgstr "설치된 테마 검색"
 
-#: wp-admin/update-core.php:346
+#: wp-admin/update-core.php:348
 msgid "<strong>Please Note:</strong> Any customizations you have made to theme files will be lost. Please consider using <a href=\"%s\">child themes</a> for modifications."
 msgstr "<strong>주의:</strong> 테마에 작업한 모든 사용자 정의는 사라질 것입니다. 수정을 위해 <a href=\"%s\">하위 테마</a>의 사용을 고려해보세요."
 
@@ -6562,20 +6562,20 @@ msgid "Sticky <span class=\"count\">(%s)</span>"
 msgid_plural "Sticky <span class=\"count\">(%s)</span>"
 msgstr[0] "붙박이 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/update-core.php:606
+#: wp-admin/update-core.php:608
 msgid "Check Again"
 msgstr "다시 확인"
 
 #. translators: %1 date, %2 time.
-#: wp-admin/update-core.php:605
+#: wp-admin/update-core.php:607
 msgid "Last checked on %1$s at %2$s."
 msgstr "%1$s, %2$s에 마지막으로 체크함."
 
-#: wp-admin/update-core.php:590
+#: wp-admin/update-core.php:592
 msgid "Please select one or more themes to update."
 msgstr "업데이트를 위해 하나 또는 그 이상의 테마를 선택해주세요."
 
-#: wp-admin/update-core.php:592
+#: wp-admin/update-core.php:594
 msgid "Please select one or more plugins to update."
 msgstr "업데이트를 위해 하나 또는 그 이상의 플러그인을 선택해주세요."
 
@@ -6709,7 +6709,7 @@ msgstr "FTP 사용자명"
 msgid "FTP Password"
 msgstr "FTP 비밀번호"
 
-#: wp-admin/widgets.php:68
+#: wp-admin/widgets.php:70
 msgid "Many themes show some sidebar widgets by default until you edit your sidebars, but they are not automatically displayed in your sidebar management tool. After you make your first widget change, you can re-add the default widgets by adding them from the Available Widgets area."
 msgstr "많은 테마들은 사이드바를 편집하기 전까지 기본적으로 몇가지 사이드바 위젯을 보여주지만 자동적으로 사이드바 관리 도구에 표시되진 않습니다. 첫번째 위젯을 변경한 후에 사용할 수 있는 위젯 영역에서 기본 위젯들을 재추가 할 수 있습니다."
 
@@ -6733,7 +6733,7 @@ msgstr "사이트의 전면 페이지에 무엇이 나타나게 할지 선택할
 msgid "To add a new user for your site, click the Add New button at the top of the screen or Add New in the Users menu section."
 msgstr "사이트에 새로운 사용자를 추가하려면, 화면 상단의 새로 추가 버튼을 클릭하거나 사용자 메뉴 섹션에서 새로 추가를 클릭하세요."
 
-#: wp-admin/widgets.php:60
+#: wp-admin/widgets.php:62
 msgid "If you want to remove the widget but save its setting for possible future use, just drag it into the Inactive Widgets area. You can add them back anytime from there. This is especially helpful when you switch to a theme with fewer or different widget areas."
 msgstr "만약 위젯을 삭제하고 싶지만 나중을 위해 설정을 저장하고 싶다면 비활성화 위젯 영역에 끌어다 놓기만 하면 됩니다. 언제든지 재사용할 수 있습니다. 이것은 위젯영역 수가 적거나 다른 위젯 영역을 가진 테마로 바꿀 때 유용합니다."
 
@@ -6865,7 +6865,7 @@ msgstr "링크명, 웹 주소, 설명의 상자들은 위치가 고정됩니다.
 msgid "An updated version of WordPress is available."
 msgstr "업데이트된 버전의 워드프레스를 사용할 수 있습니다."
 
-#: wp-admin/update-core.php:338
+#: wp-admin/update-core.php:340
 msgid "Your themes are all up to date."
 msgstr "테마는 모두 최신입니다."
 
@@ -6938,7 +6938,7 @@ msgstr "수정 입력 후, 파일 업데이트를 클릭하세요."
 msgid "<strong>Advice:</strong> think very carefully about your site crashing if you are live-editing the theme currently in use."
 msgstr "<strong>충고:</strong> 만약 현재 사용하는 테마를 실시간으로 편집하고 있다면 사이트 문제 발생에 대해서 주의하세요."
 
-#: wp-admin/widgets.php:53
+#: wp-admin/widgets.php:55
 msgid "Widgets are independent sections of content that can be placed into any widgetized area provided by your theme (commonly called sidebars). To populate your sidebars/widget areas with individual widgets, drag and drop the title bars into the desired area. By default, only the first widget area is expanded. To populate additional widget areas, click on their title bars to expand them."
 msgstr "위젯은 테마에서 제공된 위젯 영역(보통 사이드바로 불림)에 배치할 수 있는 컨텐츠의 독립된 섹션입니다. 사이드바/위젯 영역을 개별 위젯으로 배치하려면 원하는 영역으로 제목 바를 끌어놓기 하세요. 기본적으로, 첫 번째 위젯 영역만 펼쳐져 있습니다. 다른 위젯 영역에 위젯을 배치하려면, 해당 위젯 영역의 제목 바를 클릭하여 위젯 영역을 펼친후 실행하세요."
 
@@ -6950,11 +6950,11 @@ msgstr "드롭다운 메뉴에서 편집할 수 있는 테마를 선택하고 �
 msgid "You can use the Theme Editor to edit the individual CSS and PHP files which make up your theme."
 msgstr "테마 편집기를 사용해서 각각의 CSS와 PHP 파일을 편집할 수 있습니다."
 
-#: wp-admin/widgets.php:62
+#: wp-admin/widgets.php:64
 msgid "Enabling Accessibility Mode, via Screen Options, allows you to use Add and Edit buttons instead of using drag and drop."
 msgstr "화면 옵션을 통해 접근성 모드 활성을 하면 끌어놓기를 사용하는 대신 추가와 편집 버튼을 사용할 수 있게 해줍니다."
 
-#: wp-admin/widgets.php:61
+#: wp-admin/widgets.php:63
 msgid "Widgets may be used multiple times. You can give each widget a title, to display on your site, but it&#8217;s not required."
 msgstr "위젯을 여러번 사용할 수 있습니다. 각 위젯에 제목을 달아 표시할 수 있습니다. 필수사항은 아닙니다."
 
@@ -7153,7 +7153,7 @@ msgstr "고급 메뉴 속성 보기"
 
 #. translators: 1: plugin version, 2: new version
 #. translators: 1: theme version, 2: new version
-#: wp-admin/update-core.php:306 wp-admin/update-core.php:378
+#: wp-admin/update-core.php:308 wp-admin/update-core.php:380
 msgid "You have version %1$s installed. Update to %2$s."
 msgstr "현재 %1$s 버전을 사용하고 있습니다. %2$s (으)로 업데이트하세요."
 
@@ -7333,7 +7333,7 @@ msgstr "죄송합니다. 휴지통에서 이 아이템을 복구할 권한이 �
 msgid "Error in restoring from Trash."
 msgstr "휴지통에서 복원 중에 문제가 생겼습니다."
 
-#: wp-admin/update-core.php:345
+#: wp-admin/update-core.php:347
 msgid "The following themes have new versions available. Check the ones you want to update and then click &#8220;Update Themes&#8221;."
 msgstr "다음 테마의 새 버전이 있습니다. 업데이트를 할 테마를 확인하시고 \"테마 업데이트\"를 누르세요."
 
@@ -7495,21 +7495,21 @@ msgid "The password you chose during the install."
 msgstr "설치하면서 선택한 비밀번호입니다."
 
 #: wp-admin/plugins.php:131 wp-admin/update-core.php:241
-#: wp-admin/update-core.php:326 wp-admin/update-core.php:679
-#: wp-admin/update-core.php:683
+#: wp-admin/update-core.php:328 wp-admin/update-core.php:681
+#: wp-admin/update-core.php:685
 msgid "Update Plugins"
 msgstr "플러그인 업데이트"
 
-#: wp-admin/update-core.php:458
+#: wp-admin/update-core.php:460
 msgid "Update WordPress"
 msgstr "워드프레스 업데이트"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:355
-#: wp-admin/includes/update-core.php:1224 wp-admin/update-core.php:498
+#: wp-admin/includes/update-core.php:1224 wp-admin/update-core.php:500
 msgid "WordPress updated successfully"
 msgstr "워드프레스를 성공적으로 업데이트했습니다."
 
-#: wp-admin/update-core.php:546 wp-admin/update-core.php:585
+#: wp-admin/update-core.php:548 wp-admin/update-core.php:587
 msgid "WordPress Updates"
 msgstr "워드프레스 업데이트"
 
@@ -7538,7 +7538,7 @@ msgstr "모두 보기"
 msgid "Please enter a valid menu name."
 msgstr "올바른 메뉴명을 입력해주세요."
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:245
 msgid "Go to Dashboard"
 msgstr "대시보드로 가기 l&rsquo;홈"
 
@@ -7648,40 +7648,40 @@ msgstr "이 댓글은 현재 스팸으로 표시되었습니다."
 msgid "Categories:"
 msgstr "카테고리:"
 
-#: wp-admin/widgets.php:115
+#: wp-admin/widgets.php:117
 msgid "Drag widgets here to remove them from the sidebar but keep their settings."
 msgstr "사이드바에서 위젯을 삭제하지만 설정을 보존하려면 여기로 끌어놓으세요."
 
-#: wp-admin/widgets.php:386
+#: wp-admin/widgets.php:388
 msgid "Available Widgets"
 msgstr "사용할 수 있는 위젯"
 
-#: wp-admin/widgets.php:341
+#: wp-admin/widgets.php:343
 msgid "Error in displaying the widget settings form."
 msgstr "위젯 설정 폼 표시에 에러가 발생했습니다."
 
-#: wp-admin/includes/misc.php:882 wp-admin/includes/post.php:1814
-#: wp-admin/widgets.php:340
+#: wp-admin/includes/misc.php:882 wp-admin/includes/post.php:1785
+#: wp-admin/widgets.php:342
 msgid "Error while saving."
 msgstr "저장하는데 에러가 발생했습니다."
 
-#: wp-admin/widgets.php:320
+#: wp-admin/widgets.php:322
 msgid "Save Widget"
 msgstr "위젯 저장"
 
-#: wp-admin/widgets.php:282
+#: wp-admin/widgets.php:284
 msgid "Position"
 msgstr "위치"
 
-#: wp-admin/widgets.php:280
+#: wp-admin/widgets.php:282
 msgid "Select both the sidebar for this widget and the position of the widget in that sidebar."
 msgstr "이 위젯의 사이드바와 사이드바의 위치를 선택하세요."
 
-#: wp-admin/widgets.php:269
+#: wp-admin/widgets.php:271
 msgid "Widget %s"
 msgstr "위젯 %s"
 
-#: wp-admin/widgets.php:112
+#: wp-admin/widgets.php:114
 msgid "Inactive Widgets"
 msgstr "비활성화 위젯"
 
@@ -7903,19 +7903,19 @@ msgid "Plugin Reactivation"
 msgstr "플러그인 재활성화"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:353
-#: wp-admin/update-core.php:493
+#: wp-admin/update-core.php:495
 msgid "Installation Failed"
 msgstr "설치 실패"
 
-#: wp-admin/update-core.php:260 wp-admin/update-core.php:270
+#: wp-admin/update-core.php:262 wp-admin/update-core.php:272
 msgid "Compatibility with WordPress %1$s: Unknown"
 msgstr "워드프레스와의 호환성 %1$s: 알 수 없음"
 
-#: wp-admin/update-core.php:258 wp-admin/update-core.php:268
+#: wp-admin/update-core.php:260 wp-admin/update-core.php:270
 msgid "Compatibility with WordPress %1$s: %2$d%% (%3$d \"works\" votes out of %4$d total)"
 msgstr "워드프레스와의 호환성 %1$s: %2$d%% (총 %4$d 중에 %3$d 님이 \"작동함\"에 투표함)"
 
-#: wp-admin/update-core.php:255 wp-admin/update-core.php:265
+#: wp-admin/update-core.php:257 wp-admin/update-core.php:267
 msgid "Compatibility with WordPress %1$s: 100%% (according to its author)"
 msgstr "워드프레스와의 호환성 %1$s: 100%% (글쓴이에 의하면)"
 
@@ -7998,7 +7998,7 @@ msgid "You can&#8217;t edit this item because it is in the Trash. Please restore
 msgstr "이 글이 휴지통에 있어서 편집할 수 없습니다. 복원하여 재시도하세요."
 
 #: wp-admin/async-upload.php:57 wp-admin/edit-tags.php:154
-#: wp-admin/includes/post.php:1820 wp-admin/media-upload.php:46
+#: wp-admin/includes/post.php:1791 wp-admin/media-upload.php:46
 #: wp-admin/post.php:117 wp-admin/term.php:38
 msgid "Sorry, you are not allowed to edit this item."
 msgstr "죄송합니다. 이 아이템을 편집할 권한이 없습니다."
@@ -8567,8 +8567,8 @@ msgstr "토론 설정"
 msgid "No users found."
 msgstr "사용자가 없음."
 
-#: wp-admin/update-core.php:349 wp-admin/update-core.php:397
-#: wp-admin/update-core.php:712 wp-admin/update-core.php:717
+#: wp-admin/update-core.php:351 wp-admin/update-core.php:399
+#: wp-admin/update-core.php:714 wp-admin/update-core.php:719
 msgid "Update Themes"
 msgstr "테마 업데이트"
 
@@ -8916,11 +8916,11 @@ msgstr "특성 필터"
 msgid "Screen Options"
 msgstr "화면 옵션"
 
-#: wp-admin/includes/class-wp-screen.php:918
+#: wp-admin/includes/class-wp-screen.php:919
 msgid "Disable accessibility mode"
 msgstr "접근 모드 비활성화"
 
-#: wp-admin/includes/class-wp-screen.php:918
+#: wp-admin/includes/class-wp-screen.php:919
 msgid "Enable accessibility mode"
 msgstr "접근 모드 활성화"
 
@@ -9133,11 +9133,11 @@ msgstr "다른 워드프레스 %s 사이트"
 msgid "Just another WordPress site"
 msgstr "다른 워드프레스 사이트"
 
-#: wp-admin/includes/post.php:1365
+#: wp-admin/includes/post.php:1336
 msgid "Change Permalinks"
 msgstr "고유주소 변경"
 
-#: wp-admin/includes/post.php:1354 wp-admin/includes/post.php:1377
+#: wp-admin/includes/post.php:1325 wp-admin/includes/post.php:1348
 msgid "Permalink:"
 msgstr "고유주소:"
 
@@ -10405,7 +10405,7 @@ msgid "Export"
 msgstr "내보내기"
 
 #: wp-admin/includes/class-wp-list-table.php:163
-#: wp-admin/includes/class-wp-screen.php:1233
+#: wp-admin/includes/class-wp-screen.php:1234
 msgid "Excerpt View"
 msgstr "요약 보기"
 
@@ -10782,7 +10782,7 @@ msgid "Sorry, you are not allowed to edit comments on this post."
 msgstr "죄송합니다. 이 글에서 댓글을 편집할 권한이 없습니다."
 
 #: wp-admin/comment.php:61 wp-admin/comment.php:255
-#: wp-admin/includes/post.php:1561
+#: wp-admin/includes/post.php:1532
 msgid "Go back"
 msgstr "뒤로 가기"
 
