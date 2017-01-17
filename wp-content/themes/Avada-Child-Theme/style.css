@@ -8,16 +8,15 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-
 /* 폰트설정 */
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumpenscript.css");
 @import url("http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css"); 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Oxygen);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
 
 
 /* 전체적용 */
@@ -40,8 +39,19 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-page-title-bar .fusion-page-title-captions  h3 {line-height:1.4em;}
 
 
-/* 포트폴리오 Load more button */
-#main_client .fusion-load-more-button.fusion-portfolio-button {width:16%;margin:0 auto;margin-top:30px;border-radius:3px;}
+
+/* 메인 탭 */
+#slidingbar-area {top:2px;width:290px !important;height:100% !important;}
+#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
+
+#slidingbar-area .sb-toggle-wrapper {right:0;border:none;}
+#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
+#slidingbar-area .icon-remove:before {content: "";}
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+
 
 /* 메인 */
 #main_tab .nav-tabs li > a > h4 > strong {width:100% !important;display:block !important;font-size:28px;}
@@ -67,6 +77,28 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .m_sns_02 a {display:block;width:100%;padding:32px;color:#fff !important;line-height:1.5em;}
 
 #main_view_btn {padding:15px 70px !important;}
+
+
+/*페이지 상단 타이틀 */
+.txt_block {text-align:center !important;padding:0;margin:0;font-size:1.3em;}
+.txt_block h2 {padding:0;margin:20px 0 10px 0;font-size:2.6em !important;font-weight:normal !important;}
+.txt_block_01 {width:100px;margin:0;padding:20px 0 20px 0;display:inline-block;font-weight:500;font-size:16px;}
+.stxt {text-align:center !important;}
+
+.txt_shadow {text-shadow: 0 1px 3px #393939;}
+.border_wh {border-bottom:2px solid #fff;}
+.txt_wh {color:#fff !important;}
+
+.border_gr {border-bottom:2px solid #009b4f;}
+.txt_gr {color:#02b15d !important;}
+
+/* 컨텐츠 - 메뉴타이틀 */
+.cont_tit {text-align:center;padding:5px 0;margin-bottom:0;}
+.cont_tit ul {display:inline-block;text-align:center;}
+.cont_tit ul li {float:left !important;list-style:none;}
+.cont_tit .cont_tit_icon {padding-top:10px;}
+.cont_tit .cont_tit_txt {padding-left:15px;text-align:left;line-height:0.8em;font-weight:500;}
+.cont_tit .cont_tit_txt_s {font-size:12px !important;color:#717171;}
 
 
 /* 솔루션 */
@@ -157,42 +189,8 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {padding:50px 20px 20px;}
 #wrapper .post-content .content-box-heading {margin-bottom:15px;}
 
-
-/*페이지 상단 타이틀 */
-.txt_block {text-align:center !important;padding:0;margin:0;font-size:1.3em;}
-.txt_block h2 {padding:0;margin:20px 0 10px 0;font-size:2.6em !important;font-weight:normal !important;}
-.txt_block_01 {width:100px;margin:0;padding:20px 0 20px 0;display:inline-block;font-weight:500;font-size:16px;}
-.stxt {text-align:center !important;}
-
-.txt_shadow {text-shadow: 0 1px 3px #393939;}
-.border_wh {border-bottom:2px solid #fff;}
-.txt_wh {color:#fff !important;}
-
-.border_gr {border-bottom:2px solid #009b4f;}
-.txt_gr {color:#02b15d !important;}
-
-
-
-/* 컨텐츠 - 메뉴타이틀 */
-.cont_tit {text-align:center;padding:5px 0;margin-bottom:0;}
-.cont_tit ul {display:inline-block;text-align:center;}
-.cont_tit ul li {float:left !important;list-style:none;}
-.cont_tit .cont_tit_icon {padding-top:10px;}
-.cont_tit .cont_tit_txt {padding-left:15px;text-align:left;line-height:0.8em;font-weight:500;}
-.cont_tit .cont_tit_txt_s {font-size:12px !important;color:#717171;}
-
-
-/* 메인 탭 */
-#slidingbar-area {top:2px;width:290px !important;height:100% !important;}
-#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
-
-#slidingbar-area .sb-toggle-wrapper {right:0;border:none;}
-#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
-#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
-#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
-#slidingbar-area .icon-remove:before {content: "";}
-#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
-#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+/* 포트폴리오 Load more button */
+#main_client .fusion-load-more-button.fusion-portfolio-button {width:16%;margin:0 auto;margin-top:30px;border-radius:3px;}
 
 
 /* Footer */
