@@ -1,0 +1,231 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+/* 폰트설정 */
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css"); 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+/* 메인 탭 */
+<!--[if IE]>
+#slidingbar-area {top:2px;width:290px;height:100%;}
+#main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
+#slidingbar-area .sb-toggle-wrapper {right:0;}
+#slidingbar-area .sb-toggle-wrapper {border:none;}
+#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
+#slidingbar-area .icon-remove:before {content: "";}
+
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+<![endif]-->
+
+#slidingbar-area {top:2px;width:290px;height:100%;}
+#main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
+#slidingbar-area .sb-toggle-wrapper {right:0;}
+#slidingbar-area .sb-toggle-wrapper {border:none;}
+#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
+#slidingbar-area .icon-remove:before {content: "";}
+
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+
+/* 전체적용 */
+body, h1, h2, h3, h4, h5, h6, li, p{font-family:'nanumbarungothic',Helvetica,AppleGothic,Sans-serif !important;word-spacing:0.08em !important;}
+ul{list-style:none;}
+ul, ol {margin:0 10px;padding:0;}
+li{margin:0;padding:0;}
+
+.list-st-1 li {text-indent: -1em; margin-left: 0.5em;margin:4px 0;}
+.list-st-1 li:before {font-size:1.6em;content:"•";color:#fe2730;padding-right:2px;}
+a:link, a:hover, a:active, a:visited{text-decoration:none;}
+.fusion-title h2.title-heading-left {padding-right:20px;}
+.p_green {color:#009b4f;}
+.p_color1 {color:#1bad62;}
+.clear {clear:both;}
+.heading_space {margin:5px 0;}
+
+.fusion-header-wrapper.fusion-is-sticky .fusion-header {background:rgba(255, 255, 255, 0.85) !important;}
+
+.fusion-page-title-bar .fusion-page-title-captions  h1 {margin-bottom:5px !important;}
+.fusion-page-title-bar .fusion-page-title-captions  h3 {line-height:1.4em;}
+
+/* 포트폴리오 Load more button */
+#main_client .fusion-load-more-button.fusion-portfolio-button {width:16%;margin:0 auto;margin-top:30px;border-radius:3px;}
+
+/* 메인 */
+#main_tab .nav-tabs li > a > h4 > strong {width:100% !important;display:block !important;font-size:28px;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-01 {background:#edf8f7 !important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-01 strong {color:#059ba1;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-02 {background:#fff6f5!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-02 strong {color:#ff7969;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-03 {background:#eff8ff!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-03 strong {color:#35a1fe;}
+#main_tab.fusion-tabs-1 .nav-tabs li.active #fusiorn-tab-04 {background:#f8f5ff!important;}
+#main_tab.fusion-tabs-1 .nav-tabs li #fusiorn-tab-04 strong {color:#9362f3;}
+
+#main_count .content-box-counter .unit {font-size:16px;color:#333;}
+#main_count .content-box-counter {margin-bottom:10px;}
+#main_count .counter-box-content {padding-top:20px;border-top:1px solid #c6c6c6;}
+
+.m_sns_01 {background:url(/wp-content/uploads/2017/01/main_sns_banner_01.jpg) left top no-repeat;font-size:16px;padding:0 !important;margin:0;}
+.m_sns_01 .sns_tit {font-size:28px;}
+.m_sns_01 a {display:block;width:100%;padding:32px;color:#fff !important;line-height:1.5em;}
+
+.m_sns_02 {background:url(/wp-content/uploads/2017/01/main_sns_banner_02.jpg) left top no-repeat;font-size:16px;padding:0 !important;margin:0;}
+.m_sns_02 .sns_tit {font-size:28px;}
+.m_sns_02 a {display:block;width:100%;padding:32px;color:#fff !important;line-height:1.5em;}
+
+#main_view_btn {padding:15px 70px !important;}
+
+/* 솔루션 */
+#page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
+.page_1_1_st01 p{padding:15px 10px;text-align:center;background:#149a37;color:#fff;}
+.page_1_1_st01 ul {padding:15px 10px;}
+.page_tit {letter-spacing:-0.03em;background:url(/wp-content/uploads/2017/01/tit_icon.png) top 7px left no-repeat;padding-left:25px;}
+.kstudio_tab h4.fusion-tab-heading{font-size:14px;}
+.ifrs_icon div.alignleft{margin-right:5px !important;}
+
+.feature_cont{position: relative;margin:0;}
+.feature_list{overflow: hidden; padding-top: 10px;}
+.feature_box {
+	position: relative;
+	float: left;
+	display:inline-block;
+	padding:10px 0 10px 20px;
+	width: 520px;
+	min-height: 170px !important;
+	border: 1px solid #ccc;
+	background: #fafafa;
+	margin-bottom: 20px;
+}
+.feature_box dt {font-size:1.35em;line-height:1.4em;margin-bottom:10px;font-weight:600;color:#101010;}
+.feature_box dd {margin-left:0;}
+.feature_list .box02 {margin-left:20px;}
+.feature_list .box03 {margin-bottom:0;}
+.feature_list .box04 {margin-left:20px;margin-bottom:0;}
+
+.list_box {width:100%;}
+.list_tit {width: 100%; font-size:12pt; margin:0;}
+.list_box .list_tit .list_num {float:left;width:5%; padding:15px; font-size:1.4em; background:#72c287; font-weight:bold; letter-spacing:-0.05em; color:#fff;}
+.list_box .list_tit .num_txt {display:inline; float:left; margin:0; width:95%; padding:15px; letter-spacing:-0.05em; margin:0; background:#e0ede4; color:#101010; font-weight:600;}
+.list_box .list_txt {clear:both; padding:18px; min-height:70px; background:#f6f6f8;}
+
+/* 파트너 */
+.partner_txt {font-size:13px !important;letter-spacing:-0.05em;}
+
+/* 채용안내 */
+.tb_st01 {width:100%;margin:0 0 15px 0;border-top:2px solid #009b4f;border-collapse:collapse;}
+.tb_st01 th, .tb_st01 td {text-align:center;padding:10px;border:1px solid #dbdbdb;}
+.tb_st01 th {background:#f0f0f0;font-weight:bold;}
+.tb_st01 td.txt_align_left {text-align:left;}
+
+.recruit_st01{width:100%;border:1px solid #009b4f;}
+.recruit_st01 dt {padding:10px;background:#009b4f;color:#fff;text-align:center;}
+.recruit_st01 dd {padding:40px 7px;text-align:center;margin:0;}
+.recruit_st01 dd.space_plus{padding:50px 7px;}
+
+/* 전체연혁 */
+.history_inbox {margin:0;padding:0;}
+.history_year {padding-top:8px;margin:30px 0;background:url(/wp-content/uploads/2016/12/history_year_line.gif) no-repeat 0 5px;}
+.comp_carousel_item_top {overflow:hidden;padding-bottom:29px;}
+.comp_carousel_year {float:left;width:12%;}
+.comp_carousel_year div {padding-left:10px;width:86px;line-height:21px;background:#0d703a;color:#fff;font-size:18px;font-weight:bold;}
+.comp_carousel_left, .comp_carousel_right {float:left;width:44%;padding-right:50px;}
+.comp_list {color:#555;letter-spacing:-0.05em;line-height:20px;padding:0;margin:0;}
+.comp_list > li {padding:0 0 9px 44px;position:relative;color:#333;}
+.comp_list > li > strong {position:absolute;font-size:14px;top:2px;left:0;}
+.comp_list > p {line-height:24px;letter-spacing:-0.03em;color:#555;}
+.comp_carousel_item_bottom {overflow:hidden;padding:34px 0 29px;border-top:1px solid #ddd;}
+.comp_carousel_item_bottom .comp_carousel_year div {background:#888;}
+.history_page li.active .fusion-tab-heading, .history_page li.hover .fusion-tab-heading{color:#fff !important;}
+
+/* CEO포럼 소개 */
+.forum_info {margin:0 !important;}
+.forum_info_txt {width:75% !important;}
+
+/* 영웨이 */
+.young-way-toggle .fusion-accordian .panel-title {font-size:15px !important;font-weight:normal !important;}
+
+/* 인재상 */
+.career_apply_step {}
+
+/* 교육일정 상세페이지 */
+#tribe-events .fusion-events-featured-image {display:block;}
+#tribe-events .fusion-events-featured-image .tribe-events-event-image {margin-bottom:15px;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content {position:relative;background:none;padding:0 0 30px 0;border-bottom:1px solid #ddd;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content h2 {font-size:22px;margin-bottom:10px;color:#2f2f2f;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 {font-size:14px !important;color:#2f2f2f !important;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 span{font-size:14px !important;color:#2f2f2f !important;}
+
+/* 서비스 ERP */
+.service-cloud-erp-st1 {min-height: 300px; padding: 15px; background: #fff;}
+.service-erp-st1 {min-height:440px; padding: 15px 5px; background: #fff;}
+
+/* K-branch */
+.fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {padding:50px 20px 20px;}
+#wrapper .post-content .content-box-heading {margin-bottom:15px;}
+
+/* Footer */
+.fusion-footer-widget-area .widget-title {color:#268b41 !important;}
+.fusion-footer-widget-area .widget-title {margin-bottom:15px;}
+.fusion-footer-widget-area ul li {border:none !important;font-size:1.05em;}
+.fusion-widget-area .widget_nav_menu li {padding:3px 0;color:#65686e;}
+.fusion-widget-area .widget_nav_menu li a:before{display:none;}
+#wrapper .fusion-widget-area .current-menu-item > a, #wrapper .fusion-widget-area .current_page_item > a {color:#bfbfbf !important;}
+#wrapper .fusion-widget-area .current-menu-item > a:hover, #wrapper .fusion-widget-area .current_page_item > a:hover {color:#fff !important;}
+
+/* Copyright */
+.copyright_logo {display:inline;float:left;width:14%;padding-top:30px;}
+.copyright_txt {display:inline;float:left;width:70%;}
+.copyright_icon {display:inline;float:left;width:13%;padding-top:25px;}
+.copyright_icon ul {display:inline;list-style:none;}
+.copyright_icon ul li {float:left;padding:0 5px;}
+
+
+
+
+/* 모바일 */
+@media (max-width: 1023px) {
+.comp_carousel_year, .comp_carousel_left, .comp_carousel_right {float:none;width:100%;padding-right:0;}
+.comp_carousel_year {margin-bottom:20px;}
+}
+
+@media only screen and (max-width: 800px) {
+#wrapper .content-boxes-icon-boxed .content-wrapper-boxed {width:100%;}
+.fusion-body .fusion-page-title-bar {padding:60px 20px !important;}
+.fusion-title.page_tit {margin-top:20px !important;}
+
+.list_box .list_tit .list_num {width:15%;max-width:50px;font-size:1.2em;min-height:60px;padding:10px;} 
+.list_box .list_tit .num_txt {width:85%;display:inline; float:left;max-width:590px;font-size:0.8em;min-height:60px;padding:10px;}
+
+.service-erp-st1, .service-cloud-erp-st1 {min-height:auto;margin:0;padding:0 10px 10px 10px;}
+
+}
+
+@media only screen and (max-width: 640px) {
+body {font-size:12px !important;}
+.fusion-page-title-bar .fusion-page-title-captions  h1 {font-size:26px;}
+.fusion-page-title-bar .fusion-page-title-captions  h3 {font-size:18px;}
+.feature_box {
+	padding:15px 10px;
+	width: auto;
+	height: auto;
+}
+.feature_list .box02, .feature_list .box03, .feature_list .box04 {margin:0 0 20px 0;}
+}
