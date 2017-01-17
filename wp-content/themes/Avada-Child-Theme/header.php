@@ -5,24 +5,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php global $woocommerce; ?>
-<html class="<?php echo ( Avada()->settings->get( 'smooth_scrolling' ) ) ? 'no-overflow-y' : ''; ?>" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" class="<?php echo ( Avada()->settings->get( 'smooth_scrolling' ) ) ? 'no-overflow-y' : ''; ?>" <?php language_attributes(); ?>>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-	$(document).ready(function(){
-        	$(".sb-toggle").click(function(){
-  			$( "#main_sb_01" ).toggle( "slide", { direction: "right" }, 500 );
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$(document).ready(function(){
+        		$(".sb-toggle").click(function(){
+  				$( "#slidingbar" ).toggle( "slide", { direction: "right" }, 500 );
+			});
 		});
-	});
-</script>
-
+	</script>
 
 
 	<?php $is_ipad = (bool) ( isset( $_SERVER['HTTP_USER_AGENT'] ) && false !== strpos( $_SERVER['HTTP_USER_AGENT'],'iPad' ) ); ?>
@@ -224,3 +222,5 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 		?>
 		<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
 			<div class="fusion-row" style="<?php echo $row_css; ?>">
+
+

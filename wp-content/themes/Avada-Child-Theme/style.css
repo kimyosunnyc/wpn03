@@ -8,6 +8,7 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
+
 /* 폰트설정 */
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
@@ -18,40 +19,13 @@ Text Domain:  Avada
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
 
-/* 메인 탭 */
-<!--[if IE]>
-#slidingbar-area {top:2px;width:290px;height:100%;}
-#main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
-#slidingbar-area .sb-toggle-wrapper {right:0;}
-#slidingbar-area .sb-toggle-wrapper {border:none;}
-#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
-#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
-#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
-#slidingbar-area .icon-remove:before {content: "";}
-
-#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
-#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
-<![endif]-->
-
-#slidingbar-area {top:2px;width:290px;height:100%;}
-#main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
-#slidingbar-area .sb-toggle-wrapper {right:0;}
-#slidingbar-area .sb-toggle-wrapper {border:none;}
-#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
-#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
-#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
-#slidingbar-area .icon-remove:before {content: "";}
-
-#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
-#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
 
 /* 전체적용 */
 body, h1, h2, h3, h4, h5, h6, li, p{font-family:'nanumbarungothic',Helvetica,AppleGothic,Sans-serif !important;word-spacing:0.08em !important;}
-ul{list-style:none;}
 ul, ol {margin:0 10px;padding:0;}
-li{margin:0;padding:0;}
+li{margin:0;padding:0;list-style:none;}
 
-.list-st-1 li {text-indent: -1em; margin-left: 0.5em;margin:4px 0;}
+.list-st-1 li {text-indent: -1em; margin-left: 0.5em;margin:4px 0;list-style:none;}
 .list-st-1 li:before {font-size:1.6em;content:"•";color:#fe2730;padding-right:2px;}
 a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-title h2.title-heading-left {padding-right:20px;}
@@ -64,6 +38,7 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 .fusion-page-title-bar .fusion-page-title-captions  h1 {margin-bottom:5px !important;}
 .fusion-page-title-bar .fusion-page-title-captions  h3 {line-height:1.4em;}
+
 
 /* 포트폴리오 Load more button */
 #main_client .fusion-load-more-button.fusion-portfolio-button {width:16%;margin:0 auto;margin-top:30px;border-radius:3px;}
@@ -92,6 +67,7 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .m_sns_02 a {display:block;width:100%;padding:32px;color:#fff !important;line-height:1.5em;}
 
 #main_view_btn {padding:15px 70px !important;}
+
 
 /* 솔루션 */
 #page_1_1_tab li.active .fusion-tab-heading, #page_1_1_tab li.hover .fusion-tab-heading{color:#fff !important;}
@@ -181,6 +157,44 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {padding:50px 20px 20px;}
 #wrapper .post-content .content-box-heading {margin-bottom:15px;}
 
+
+/*페이지 상단 타이틀 */
+.txt_block {text-align:center !important;padding:0;margin:0;font-size:1.3em;}
+.txt_block h2 {padding:0;margin:20px 0 10px 0;font-size:2.6em !important;font-weight:normal !important;}
+.txt_block_01 {width:100px;margin:0;padding:20px 0 20px 0;display:inline-block;font-weight:500;font-size:16px;}
+.stxt {text-align:center !important;}
+
+.txt_shadow {text-shadow: 0 1px 3px #393939;}
+.border_wh {border-bottom:2px solid #fff;}
+.txt_wh {color:#fff !important;}
+
+.border_gr {border-bottom:2px solid #009b4f;}
+.txt_gr {color:#02b15d !important;}
+
+
+
+/* 컨텐츠 - 메뉴타이틀 */
+.cont_tit {text-align:center;padding:5px 0;margin-bottom:0;}
+.cont_tit ul {display:inline-block;text-align:center;}
+.cont_tit ul li {float:left !important;list-style:none;}
+.cont_tit .cont_tit_icon {padding-top:10px;}
+.cont_tit .cont_tit_txt {padding-left:15px;text-align:left;line-height:0.8em;font-weight:500;}
+.cont_tit .cont_tit_txt_s {font-size:12px !important;color:#717171;}
+
+
+/* 메인 탭 */
+#slidingbar-area {top:2px;width:290px !important;height:100% !important;}
+#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
+
+#slidingbar-area .sb-toggle-wrapper {right:0;border:none;}
+#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
+#slidingbar-area .icon-remove:before {content: "";}
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+
+
 /* Footer */
 .fusion-footer-widget-area .widget-title {color:#268b41 !important;}
 .fusion-footer-widget-area .widget-title {margin-bottom:15px;}
@@ -194,8 +208,8 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .copyright_logo {display:inline;float:left;width:14%;padding-top:30px;}
 .copyright_txt {display:inline;float:left;width:70%;}
 .copyright_icon {display:inline;float:left;width:13%;padding-top:25px;}
-.copyright_icon ul {display:inline;list-style:none;}
-.copyright_icon ul li {float:left;padding:0 5px;}
+.copyright_icon ul {display:inline;}
+.copyright_icon ul li {float:left;list-style:none;padding:0 5px;}
 
 
 
@@ -215,7 +229,6 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .list_box .list_tit .num_txt {width:85%;display:inline; float:left;max-width:590px;font-size:0.8em;min-height:60px;padding:10px;}
 
 .service-erp-st1, .service-cloud-erp-st1 {min-height:auto;margin:0;padding:0 10px 10px 10px;}
-
 }
 
 @media only screen and (max-width: 640px) {
