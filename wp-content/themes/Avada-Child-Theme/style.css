@@ -19,19 +19,34 @@ Text Domain:  Avada
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
 
 /* 메인 탭 */
+<!--[if IE]>
 #slidingbar-area {top:2px;width:290px;height:100%;}
 #main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
 #slidingbar-area .sb-toggle-wrapper {right:0;}
 #slidingbar-area .sb-toggle-wrapper {border:none;}
 #slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
-#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:0px;position:fixed;top:250px;}
-#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;width:20px;height:20px;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
 #slidingbar-area .icon-remove:before {content: "";}
-#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;}
-#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+<![endif]-->
+
+#slidingbar-area {top:2px;width:290px;height:100%;}
+#main_sb_01  {width:290px;height:100%;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;z-index:3;}
+#slidingbar-area .sb-toggle-wrapper {right:0;}
+#slidingbar-area .sb-toggle-wrapper {border:none;}
+#slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
+#slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
+#slidingbar-area .remove_btn {float:right;padding:0;margin:10px 0;}
+#slidingbar-area .icon-remove:before {content: "";}
+
+#slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
+#slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
 
 /* 전체적용 */
-body, h1, h2, h3, h4, h5, h6, li, p{font-family:'Nanum Gothic',Helvetica,AppleGothic,Sans-serif !important;word-spacing:0.08em !important;}
+body, h1, h2, h3, h4, h5, h6, li, p{font-family:'nanumbarungothic',Helvetica,AppleGothic,Sans-serif !important;word-spacing:0.08em !important;}
 ul{list-style:none;}
 ul, ol {margin:0 10px;padding:0;}
 li{margin:0;padding:0;}

@@ -9,10 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php global $woocommerce; ?>
 <html class="<?php echo ( Avada()->settings->get( 'smooth_scrolling' ) ) ? 'no-overflow-y' : ''; ?>" <?php language_attributes(); ?>>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
@@ -24,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		});
 	});
 </script>
+
 
 
 	<?php $is_ipad = (bool) ( isset( $_SERVER['HTTP_USER_AGENT'] ) && false !== strpos( $_SERVER['HTTP_USER_AGENT'],'iPad' ) ); ?>
