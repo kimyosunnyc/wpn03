@@ -5,6 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 ?>
+
 <div id="slidingbar-area" class="slidingbar-area fusion-widget-area<?php echo ( Avada()->settings->get( 'slidingbar_open_on_load' ) ) ? ' open_onload' : ''; ?>">
 	<div id="slidingbar">
 		<div class="remove_btn"><a class="sb-toggle" href="#"><i class="icon-remove"></i></a></div>
