@@ -39,6 +39,9 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 
 /* 메인 탭 */
+#slidingbar-area {top:2px;width:290px !important;height:100% !important;}
+#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
+
 #slidingbar-area .sb-toggle-wrapper {right:0;border:none;}
 #slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
 #slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
@@ -46,8 +49,6 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 #slidingbar-area .icon-remove:before {content: "";}
 #slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
 #slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
-
-#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
 
 
 /* 메인 */

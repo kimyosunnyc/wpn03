@@ -17,18 +17,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
-	$(".sb-toggle").click(function () {
+// Open SideNav
+	$(".open-toggle").click(function () {
+		var effect = 'slide'; // Set the effect type
+		var options = { direction: 'right' }; // Set the options for the effect type chosen
+		var duration = 500; // Set the duration (default: 500 milliseconds)
+		$('#slidingbar').toggle(effect, options, duration);
+	});
 
-	// Set the effect type
-	var effect = 'slide';
-
-	// Set the options for the effect type chosen
-	var options = { direction: 'right' };
-
-	// Set the duration (default: 400 milliseconds)
-	var duration = 500;
-
-	$('#slidingbar').toggle(effect, options, duration);
+// Close SideNav
+	$(".close-toggle").click(function () {
+		var effect = 'slide'; // Set the effect type
+		var options = { direction: 'right' }; // Set the options for the effect type chosen
+		var duration = 500; // Set the duration (default: 500 milliseconds)
+		$('#slidingbar').toggle(effect, options, duration);
 	});
 });
 </script>
@@ -86,6 +88,9 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 
 ?>
 <body <?php body_class(); ?>>
+
+
+
 
 	<?php do_action( 'avada_before_body_content' ); ?>
 	<?php $boxed_side_header_right = false; ?>
