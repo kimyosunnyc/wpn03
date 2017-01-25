@@ -12,15 +12,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-		$(document).ready(function(){
-        		$(".sb-toggle").click(function(){
-  				$( "#slidingbar" ).toggle( "slide", { direction: "right" }, 500 );
-			});
-		});
-	</script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+	$(".sb-toggle").click(function () {
+
+	// Set the effect type
+	var effect = 'slide';
+
+	// Set the options for the effect type chosen
+	var options = { direction: 'right' };
+
+	// Set the duration (default: 400 milliseconds)
+	var duration = 500;
+
+	$('#slidingbar').toggle(effect, options, duration);
+	});
+});
+</script>
 
 
 	<?php $is_ipad = (bool) ( isset( $_SERVER['HTTP_USER_AGENT'] ) && false !== strpos( $_SERVER['HTTP_USER_AGENT'],'iPad' ) ); ?>
@@ -75,6 +86,7 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 
 ?>
 <body <?php body_class(); ?>>
+
 	<?php do_action( 'avada_before_body_content' ); ?>
 	<?php $boxed_side_header_right = false; ?>
 	<?php if ( ( ( 'Boxed' == Avada()->settings->get( 'layout' ) && ( 'default' == get_post_meta( $c_page_id, 'pyre_page_bg_layout', true ) || '' == get_post_meta( $c_page_id, 'pyre_page_bg_layout', true ) ) ) || 'boxed' == get_post_meta( $c_page_id, 'pyre_page_bg_layout', true ) ) && 'Top' != Avada()->settings->get( 'header_position' ) ) : ?>
@@ -222,5 +234,6 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 		?>
 		<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
 			<div class="fusion-row" style="<?php echo $row_css; ?>">
+
 
 

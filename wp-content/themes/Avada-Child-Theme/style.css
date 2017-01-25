@@ -25,7 +25,7 @@ ul, ol {margin:0 10px;padding:0;}
 li{margin:0;padding:0;list-style:none;}
 
 .list-st-1 li {text-indent: -1em; margin-left: 0.5em;margin:4px 0;list-style:none;}
-.list-st-1 li:before {font-size:1.6em;content:"•";color:#fe2730;padding-right:2px;}
+.list-st-1 li:before {font-size:1.3em;content:"•";color:#fe2730;padding-right:2px;}
 a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .fusion-title h2.title-heading-left {padding-right:20px;}
 .p_green {color:#009b4f;}
@@ -34,16 +34,11 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .heading_space {margin:5px 0;}
 
 .fusion-header-wrapper.fusion-is-sticky .fusion-header {background:rgba(255, 255, 255, 0.85) !important;}
-
 .fusion-page-title-bar .fusion-page-title-captions  h1 {margin-bottom:5px !important;}
 .fusion-page-title-bar .fusion-page-title-captions  h3 {line-height:1.4em;}
 
 
-
 /* 메인 탭 */
-#slidingbar-area {top:2px;width:290px !important;height:100% !important;}
-#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
-
 #slidingbar-area .sb-toggle-wrapper {right:0;border:none;}
 #slidingbar-area .sb-toggle-wrapper .sb-toggle:after {display:none;}
 #slidingbar-area .sb-toggle-wrapper ul.sb-toggle-btn {width:38px;right:-1px;position:fixed;top:25%;}
@@ -51,6 +46,8 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 #slidingbar-area .icon-remove:before {content: "";}
 #slidingbar-area .remove_btn a:link {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center 1px no-repeat;overflow:hidden;}
 #slidingbar-area .remove_btn a:hover {padding:0 10px;background:url(/wp-content/uploads/2017/01/small-close.png) center -15px no-repeat;overflow:hidden;}
+
+#slidingbar {width:290px;height:100%;right:0;top:1px;bottom:0;padding:35px 30px;background:#151515;position:fixed;_position:absolute;z-index:3;}
 
 
 /* 메인 */
@@ -106,6 +103,7 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .page_1_1_st01 p{padding:15px 10px;text-align:center;background:#149a37;color:#fff;}
 .page_1_1_st01 ul {padding:15px 10px;}
 .page_tit {letter-spacing:-0.03em;background:url(/wp-content/uploads/2017/01/tit_icon.png) top 7px left no-repeat;padding-left:25px;}
+.page_tit_wh {letter-spacing:-0.03em;background:url(/wp-content/uploads/2017/01/tit_icon_wh.png) top 7px left no-repeat;padding-left:25px;}
 .kstudio_tab h4.fusion-tab-heading{font-size:14px;}
 .ifrs_icon div.alignleft{margin-right:5px !important;}
 
@@ -169,6 +167,9 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 /* 영웨이 */
 .young-way-toggle .fusion-accordian .panel-title {font-size:15px !important;font-weight:normal !important;}
+.youngway_box {min-height:125px;}
+.youngway_box h5 {padding:0;margin:0 0 10px 0;}
+.youngway_box p {padding:0;margin:0;}
 
 /* 인재상 */
 .career_apply_step {}
@@ -188,9 +189,21 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 /* K-branch */
 .fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {padding:50px 20px 20px;}
 #wrapper .post-content .content-box-heading {margin-bottom:15px;}
+#kbranch-icon-box .content-container {letter-spacing:-0.1em;}
+#kbranch-icon-box h2.content-box-heading {margin-bottom:0 !important;}
+
+/* FTA */
+#fta_last_cont {margin-bottom:30px !important;}
+#fta_last_cont .content-wrapper-boxed {width:100%;}
+#fta_last_cont .content-box-heading {margin-bottom:0 !important;}
+
+.fta-box .title-heading-center {padding:10px !important;background:#1e9b75;color:#fff;}
+.fta-box-txt {padding:0 7px 7px 10px;}
+#fta-wrap .fusion-column-wrapper {min-height:280px;}
 
 /* 포트폴리오 Load more button */
 #main_client .fusion-load-more-button.fusion-portfolio-button {width:16%;margin:0 auto;margin-top:30px;border-radius:3px;}
+
 
 
 /* Footer */
@@ -204,11 +217,10 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 
 /* Copyright */
 .copyright_logo {display:inline;float:left;width:14%;padding-top:30px;}
-.copyright_txt {display:inline;float:left;width:70%;}
+.copyright_txt {display:inline;float:left;width:70%;line-height:1.4em;}
 .copyright_icon {display:inline;float:left;width:13%;padding-top:25px;}
 .copyright_icon ul {display:inline;}
 .copyright_icon ul li {float:left;list-style:none;padding:0 5px;}
-
 
 
 
@@ -227,7 +239,11 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .list_box .list_tit .num_txt {width:85%;display:inline; float:left;max-width:590px;font-size:0.8em;min-height:60px;padding:10px;}
 
 .service-erp-st1, .service-cloud-erp-st1 {min-height:auto;margin:0;padding:0 10px 10px 10px;}
+#main_client .fusion-layout-column.fusion-one-sixth {width:50% !important;}
+#main_cont05 .content-box-column {text-align:center;}
+#main .post-content .fusion-border-below-title h1 {margin-top:20px;}
 }
+
 
 @media only screen and (max-width: 640px) {
 body {font-size:12px !important;}
@@ -239,4 +255,9 @@ body {font-size:12px !important;}
 	height: auto;
 }
 .feature_list .box02, .feature_list .box03, .feature_list .box04 {margin:0 0 20px 0;}
+#main_client .fusion-layout-column.fusion-one-sixth {width:50% !important;}
+#main_cont05 .content-box-column {text-align:center;}
+#main .post-content .fusion-border-below-title h1 {margin-top:20px;}
 }
+
+
