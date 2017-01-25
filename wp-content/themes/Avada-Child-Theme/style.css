@@ -74,6 +74,10 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .m_sns_02 a {display:block;width:100%;padding:32px;color:#fff !important;line-height:1.5em;}
 
 #main_view_btn {padding:15px 70px !important;}
+#home_calendar p.tribe-events-widget-link{display:none;}
+#home_calendar .tribe-events-list-widget ol li {padding:7px 0 !important;}
+#home_calendar .tribe-events-list-widget ol li h4 {font-size:15px !important;}
+#home_calendar .tribe-events-list-widget .duration {font-size:12px !important;}
 
 
 /*페이지 상단 타이틀 */
@@ -175,12 +179,18 @@ a:link, a:hover, a:active, a:visited{text-decoration:none;}
 .career_apply_step {}
 
 /* 교육일정 상세페이지 */
-#tribe-events .fusion-events-featured-image {display:block;}
+#tribe-events-content .tribe-events-event-image {display:none;}
 #tribe-events .fusion-events-featured-image .tribe-events-event-image {margin-bottom:15px;}
 #tribe-events .fusion-events-featured-image .fusion-events-single-title-content {position:relative;background:none;padding:0 0 30px 0;border-bottom:1px solid #ddd;}
 #tribe-events .fusion-events-featured-image .fusion-events-single-title-content h2 {font-size:22px;margin-bottom:10px;color:#2f2f2f;}
 #tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 {font-size:14px !important;color:#2f2f2f !important;}
 #tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 span{font-size:14px !important;color:#2f2f2f !important;}
+.single-tribe_events #main .sidebar {display:none;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content h2 {width:100%;display:block;}
+#tribe-events .fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 {width:100%;display:block;}
+#tribe-events-content .tribe-events-cal-links {display:none;}
+
+
 
 /* 서비스 ERP */
 .service-cloud-erp-st1 {min-height: 300px; padding: 15px; background: #fff;}
