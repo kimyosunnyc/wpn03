@@ -26,143 +26,143 @@ msgctxt "start of week"
 msgid "1"
 msgstr "0"
 
-#: wp-admin/about.php:231
+#: wp-admin/about.php:234
 msgid "Customize changesets make changes in the customizer persistent, like autosave drafts. They also make exciting new features like starter content possible."
 msgstr "사용자 정의 변경세트는 자동저장 임시글 처럼 사용자 정의하기에서 변경사항을 보존할 수 있습니다. 또한 시작 콘텐츠와 같은 새로운 흥미진진한 기능을 가능하게 합니다."
 
-#: wp-admin/about.php:230
+#: wp-admin/about.php:233
 msgid "Customize Changesets"
 msgstr "사용자 정의 변경세트"
 
 #. translators: 1: register_setting(), 2:
 #. https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/
-#: wp-admin/about.php:223
+#: wp-admin/about.php:226
 msgid "%1$s <a href=\"%2$s\">has been enhanced</a> to include type, description, and REST API visibility."
 msgstr "%1$s은(는) 타입, 설명, REST API 가시성을 포함하도록 <a href=\"%2$s\">향상됐습니다.</a> "
 
-#: wp-admin/about.php:219
+#: wp-admin/about.php:222
 msgid "Settings Registration API"
 msgstr "설정 등록 API"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
-#: wp-admin/about.php:213
+#: wp-admin/about.php:216
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
 msgstr "액션과 필터 내부에 존재하는 코드는 전체적으로 재작성됐으며 현대화 됐고 모든 버그를 수정했습니다."
 
-#: wp-admin/about.php:203
+#: wp-admin/about.php:206
 msgid "List tables, now with more than bulk edit and delete."
 msgstr "목록 테이블은 이제 일괄 편집과 삭제가 가능합니다."
 
-#: wp-admin/about.php:202
+#: wp-admin/about.php:205
 msgid "Custom Bulk Actions"
 msgstr "사용자 정의 일괄 작업"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
-#: wp-admin/about.php:196
+#: wp-admin/about.php:199
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
 msgstr "워드프레스 4.7은 테마 개발자를 위해 <a href=\"%s\">새로운 함수, 후크, 동작</a>을 포함합니다."
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:195
 msgid "More Theme API Goodies"
 msgstr "더많은 테마 API의 좋은 것들"
 
-#: wp-admin/about.php:189
+#: wp-admin/about.php:192
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
 msgstr "페이지 템플릿 기능을 모든 글 타입에 확장시켰기 때문에 테마 개발자는 워드프레스 템플릿 계층구조에 더 많은 유연성을 가질 수 있습니다."
 
-#: wp-admin/about.php:188
+#: wp-admin/about.php:191
 msgid "Post Type Templates"
 msgstr "글 타입 템플릿"
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:181
+#: wp-admin/about.php:184
 msgid "Even More Developer Happiness %s"
 msgstr "훨씬 더 많은 개발자의 즐거움 %s"
 
 #. translators: %s: https://developer.wordpress.org/rest-api/
-#: wp-admin/about.php:169
+#: wp-admin/about.php:172
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
 msgstr "콘텐츠 엔드포인트는 워드프레스 사이트에 명확하고 표준화된 인터페이스로 기계가 읽을 수 있는 외부 접근을 허용합니다. 이는 플러그인, 테마, 앱 등 아주 많은 것을 통해 사이트와 상호작용할 수 있는 새롭고 혁신적인 길을 열어줄 것입니다. 개발을 시작할 준비가 되셨나요? <a href=\"%s\">REST API 참조를 알아보세요.</a>"
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:167
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
 msgstr "워드프레스 4.7은 글, 댓글, 텀, 사용자, 테마, 설정에 REST API 엔드포인트를 제공합니다."
 
-#: wp-admin/about.php:163
+#: wp-admin/about.php:166
 msgid "Introducing REST API Content Endpoints"
 msgstr "REST API 콘텐츠 엔드포인트 소개"
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:159
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
 msgstr "자신의 사이트가 하나의 언어로 돼있다는 것은 사이트를 관리하는 모든 사람이 자신의 관리자 화면을 해당 언어로만 사용해야 하는 것을 의미하지는 않습니다. 자신의 사이트에 더 많은 언어를 추가하면 사용자 언어 옵션이 사용자 프로필에 보일 것입니다."
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:157
 msgid "Dashboard in your language"
 msgstr "자신의 언어로 된 관리자 화면"
 
-#: wp-admin/about.php:151
+#: wp-admin/about.php:154
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
 msgstr "워드프레스 4.7에서는 문서 모음을 관리하기가 더 쉬워집니다. PDF 파일을 업로드하면 썸네일 이미지를 생성하며 다른 문서와 쉽게 구별할 수 있습니다."
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:152
 msgid "PDF Thumbnail Previews"
 msgstr "PDF 썸네일 미리보기"
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:144
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
 msgstr "가끔 자신의 사이트를 몇 가지 조작으로 완벽하게 만들고 싶을 때가 있을 겁니다. 워드프레스 4.7은 사용자 정의 CSS를 허용하며 변경사항이 사이트에 적용되는 것을 바로 확인할 수 있습니다. 실시간 미리보기는 페이지를 새로고침하는 번거로움이 없이 바로 작업할 수 있도록 합니다."
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:139
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
 msgstr "사이트의 많은 메뉴는 각 페이지로 가는 링크가 포함됩니다. 하지만 아직 아무런 페이지가 없다면 어떨까요? 변경사항을 저장하지도 못하고 사용자 정의하기에서 벗어나는 대신 이제는 메뉴를 생성하면서 새 페이지를 추가할 수 있습니다."
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:137
 msgid "Smoother Menu Building"
 msgstr "더 유연해진 메뉴 만들기"
 
-#: wp-admin/about.php:128
+#: wp-admin/about.php:131
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
 msgstr "움직이는 헤더 이미지와 같은 분위기 있는 비디오는 자신의 사이트를 돋보이게할 필요가 있을 겁니다. Twenty Seventeen 테마를 사용해보세요. 비디오 영감이 필요하신가요? 비디오 헤더가 있는 사이트를 검색해 다운로드와 사용이 가능한지 찾아보세요."
 
-#: wp-admin/about.php:116
+#: wp-admin/about.php:119
 msgid "Video Headers"
 msgstr "비디오 헤더"
 
-#: wp-admin/about.php:113
+#: wp-admin/about.php:116
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
 msgstr "실시간 미리보기하면서 아이콘이 나타나며 어떤 부분을 사용자 정의 할 수 있는지 보여줍니다. 이 아이콘을 클릭하면 편집 화면으로 바로 이동합니다. 시작 콘텐츠와 더불어 사이트의 사용자 정의하는 것이 이전보다 더 빨라졌습니다."
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:104
 msgid "Edit Shortcuts"
 msgstr "편집 단축키"
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:85
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
 msgstr "사이트를 만드는 확고한 기본을 제공하기 위해 개별 테마는 시작 콘텐츠를 제공하며 새로운 사이트를 사용자 정의하기위해 이동할 때 나타납니다. 시작 콘텐츠의 범위는 비지니스 정보 위젯을 최적의 장소에 배치하는 것부터 아름다운 이미지가 있는 전면 페이지로 이동이 가능한 소셜 아이콘 링크가 있는 예제 메뉴를 제공하는 것까지 있습니다. 걱정하지 마세요. 초기 테마 설정을 저장하고 발행할 준비가 되기 전까지는 실제 사이트에 아무것도 나타나지 않습니다."
 
-#: wp-admin/about.php:81
+#: wp-admin/about.php:84
 msgid "Theme Starter Content"
 msgstr "테마 시작 콘텐츠"
 
-#: wp-admin/about.php:76
+#: wp-admin/about.php:79
 msgid "WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow."
 msgstr "워드프레스 4.7은 사용자 정의하기에 새 기능을 추가했으며 테마의 초기 설정을 마치는데 도움이 됩니다. 방해받지 않는 하나의 작업 흐름에서 모든 변경사항의 비파괴적인 실시간 미리보기가 가능합니다."
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:78
 msgid "Your Site, Your Way"
 msgstr "자신의 사이트를 자신의 방법으로"
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:72
 msgid "Twenty Seventeen focuses on business sites and features a customizable front page with multiple sections. Personalize it with widgets, navigation, social menus, a logo, custom colors, and more. Our default theme for 2017 works great in many languages, on any device, and for a wide range of users."
 msgstr "Twenty Seventeen은 비지니스 사이트에 중점을 뒀으며 다중 영역이 있는 사용자 정의 가능한 전면 페이지 기능이 있습니다. 위젯, 내비게이션, 소셜 메뉴, 로고, 사용자 정의 색상 등으로 개성있게 만드세요. 2017년을 위한 우리의 기본 테마는 많은 언어, 모든 기기, 아주 다양한 사용자를 위해 훌륭하게 작동합니다."
 
-#: wp-admin/about.php:63
+#: wp-admin/about.php:66
 msgid "A brand new default theme brings your site to life with immersive featured images and video headers."
 msgstr "새로운 기본 테마는 몰입할 수 있는 특성 이미지와 비디오 헤더로 인해 사이트에 생명을 불어넣을 것입니다."
 
-#: wp-admin/about.php:62
+#: wp-admin/about.php:65
 msgid "Presenting Twenty Seventeen"
 msgstr "Twenty Seventeen 소개"
 
@@ -1221,7 +1221,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "%s에 오신 것을 환영합니다. 이것은 첫번째 글입니다. 수정하거나 삭제하신 후 블로깅을 시작하세요."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:266
+#: wp-admin/about.php:269
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>버전 %s</strong> 하나의 보안 문제 처리함."
 
@@ -1238,15 +1238,15 @@ msgstr "<a href=\"%s\">Gravatar</a>에서 프로필 사진을 변경할 수 있�
 msgid "Profile Picture"
 msgstr "프로필 사진"
 
-#: wp-admin/about.php:263
+#: wp-admin/about.php:47 wp-admin/about.php:266
 msgid "Maintenance and Security Releases"
 msgstr "유지보수 및 보안 릴리즈"
 
-#: wp-admin/about.php:260
+#: wp-admin/about.php:263
 msgid "Security Releases"
 msgstr "보안 릴리즈"
 
-#: wp-admin/about.php:257
+#: wp-admin/about.php:260
 msgid "Maintenance Releases"
 msgstr "유지 관리 릴리즈"
 
@@ -1640,7 +1640,7 @@ msgstr "아이템 목록 탐색"
 msgid "Filter items list"
 msgstr "아이템 목록 필터"
 
-#: wp-admin/includes/class-wp-press-this.php:1483
+#: wp-admin/includes/class-wp-press-this.php:1521
 msgid "Saving&hellip;"
 msgstr "저장중&hellip;"
 
@@ -1921,11 +1921,11 @@ msgstr[0] "이 저자가 올린 글 %s"
 msgid "Live Preview &#8220;%s&#8221;"
 msgstr "실시간 미리보기&#8220;%s&#8221;"
 
-#: wp-admin/includes/class-wp-press-this.php:1486
+#: wp-admin/includes/class-wp-press-this.php:1524
 msgid "More actions"
 msgstr "더 많은 작업"
 
-#: wp-admin/includes/class-wp-press-this.php:223
+#: wp-admin/includes/class-wp-press-this.php:241
 msgid "This category already exists."
 msgstr "이 카테고리는 이미 등록되어 있습니다."
 
@@ -2250,7 +2250,7 @@ msgstr "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgid "The <a href=\"https://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended)"
 msgstr "사이트 <a href=\"https://codex.wordpress.org/Glossary#Character_set\">글자 인코딩</a> (UTF-8 추천)"
 
-#: wp-admin/includes/class-wp-press-this.php:1491
+#: wp-admin/includes/class-wp-press-this.php:1529
 msgid "Standard Editor"
 msgstr "기본 편집기"
 
@@ -2368,7 +2368,7 @@ msgstr "다음 플러그인을 제거할 예정입니다:"
 msgid "Delete Plugins"
 msgstr "플러그인 삭제"
 
-#: wp-admin/includes/class-wp-press-this.php:1333
+#: wp-admin/includes/class-wp-press-this.php:1363
 msgid "Hide post options"
 msgstr "글 옵션 감추기"
 
@@ -2494,67 +2494,67 @@ msgctxt "revision date short format"
 msgid "j M @ H:i"
 msgstr "M j @ H:i"
 
-#: wp-admin/includes/class-wp-press-this.php:241
+#: wp-admin/includes/class-wp-press-this.php:259
 msgid "This category cannot be added. Please change the name and try again."
 msgstr "이 카테고리는 추가할 수 없습니다. 이름을 변경하고 다시 해주세요."
 
-#: wp-admin/includes/class-wp-press-this.php:248
+#: wp-admin/includes/class-wp-press-this.php:266
 msgid "Error while adding the category. Please try again later."
 msgstr "카테고리 추가 중 에러. 나중에 다시 해주세요."
 
-#: wp-admin/includes/class-wp-press-this.php:859
+#: wp-admin/includes/class-wp-press-this.php:883
 msgid "Toggle add category"
 msgstr "카테고리 추가 토글"
 
-#: wp-admin/includes/class-wp-press-this.php:884
+#: wp-admin/includes/class-wp-press-this.php:908
 msgid "Search categories by name"
 msgstr "이름으로 카테고리 검색"
 
-#: wp-admin/includes/class-wp-press-this.php:886
+#: wp-admin/includes/class-wp-press-this.php:910
 msgid "Search categories"
 msgstr "검색 카테고리"
 
-#: wp-admin/includes/class-wp-press-this.php:1138
+#: wp-admin/includes/class-wp-press-this.php:1162
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "소스:"
 
-#: wp-admin/includes/class-wp-press-this.php:1331
+#: wp-admin/includes/class-wp-press-this.php:1361
 msgid "Show post options"
 msgstr "글 옵션 보이기"
 
-#: wp-admin/includes/class-wp-press-this.php:1244
+#: wp-admin/includes/class-wp-press-this.php:1268
 msgid "Press This!"
 msgstr "끌어오기!"
 
-#: wp-admin/includes/class-wp-press-this.php:1339
+#: wp-admin/includes/class-wp-press-this.php:1369
 msgid "Scan site for content"
 msgstr "사이트에서 콘텐츠 스캔"
 
-#: wp-admin/includes/class-wp-press-this.php:1340
+#: wp-admin/includes/class-wp-press-this.php:1370
 msgid "Enter a URL to scan"
 msgstr "스캔할 URL 입력"
 
-#: wp-admin/includes/class-wp-press-this.php:1341
+#: wp-admin/includes/class-wp-press-this.php:1371
 msgid "Scan"
 msgstr "스캔"
 
-#: wp-admin/includes/class-wp-press-this.php:1367
+#: wp-admin/includes/class-wp-press-this.php:1397
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "<a href=\"%s\" target=\"_blank\">북마크</a>를 최신 버전으로 업그레이드 해야 합니다!"
 
-#: wp-admin/includes/class-wp-press-this.php:1376
-#: wp-admin/includes/class-wp-press-this.php:1377
+#: wp-admin/includes/class-wp-press-this.php:1406
+#: wp-admin/includes/class-wp-press-this.php:1407
 msgid "Post title"
 msgstr "글 제목"
 
-#: wp-admin/includes/class-wp-press-this.php:1381
+#: wp-admin/includes/class-wp-press-this.php:1411
 msgid "Suggested media"
 msgstr "제안된 미디어"
 
-#: wp-admin/includes/class-wp-press-this.php:1444
-#: wp-admin/includes/class-wp-press-this.php:1454
-#: wp-admin/includes/class-wp-press-this.php:1463
+#: wp-admin/includes/class-wp-press-this.php:1478
+#: wp-admin/includes/class-wp-press-this.php:1489
+#: wp-admin/includes/class-wp-press-this.php:1500
 msgid "Back to post options"
 msgstr "글 옵션으로 돌아가기"
 
@@ -5349,26 +5349,26 @@ msgid "Contributing Developers"
 msgstr "기여하는 개발자들"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:271
+#: wp-admin/about.php:274
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong>이(가) %2$s 버그를 해결함."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:48 wp-admin/about.php:279
+#: wp-admin/about.php:51 wp-admin/about.php:282
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 몇가지 보안 문제를 처리했고 %2$s 버그를 수리했습니다."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:50 wp-admin/about.php:283
+#: wp-admin/about.php:49 wp-admin/about.php:53 wp-admin/about.php:286
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "더 많은 정보는, <a href=\"%s\">릴리즈 노트</a>를 참조하세요."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:275
+#: wp-admin/about.php:278
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 보안 문제와 %2$s 버그를 처리했습니다."
@@ -5378,15 +5378,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "워드프레스 알림판에 오신 것을 환영합니다! 이 화면은 사이트에 로그인 했을 때 보여지며 워드프레스의 모든 사이트 관리 기능에 접근하게 해줍니다. 어떤 화면에서든 우측 상단의 도움말 탭을 클릭해서 도움을 얻을 수 있습니다"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:268
+#: wp-admin/about.php:48 wp-admin/about.php:271
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>버전 %s</strong> 보안 문제를 처리했습니다."
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:259
 msgid "Maintenance Release"
 msgstr "관리 릴리즈"
 
-#: wp-admin/about.php:259
+#: wp-admin/about.php:262
 msgid "Security Release"
 msgstr "보안 릴리즈"
 
@@ -5394,7 +5394,7 @@ msgstr "보안 릴리즈"
 msgid "What&#8217;s New"
 msgstr "새로운 것"
 
-#: wp-admin/about.php:47 wp-admin/about.php:262
+#: wp-admin/about.php:265
 msgid "Maintenance and Security Release"
 msgstr "관리 보안 릴리즈"
 
@@ -5406,7 +5406,7 @@ msgstr "이 화면은 기본 고유주소 구조를 선택할 수 있게 해줍�
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "워드프레스 %1$s에 오신 것을 환영합니다. <a href=\"%2$s\">자세히 보기</a>."
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:245
 msgid "Return to Updates"
 msgstr "업데이트로 돌아가기"
 
@@ -5686,11 +5686,11 @@ msgstr "add_meta_box()를 사용하기 위해서 wp-admin/includes/template.php�
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s 사용을 환영합니다"
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:245
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "대시보드 &rarr; 업데이트로 돌아가기"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:248
 msgid "Go to Dashboard &rarr; Home"
 msgstr "대시보드 &rarr; 홈으로 가기"
 
@@ -6112,7 +6112,7 @@ msgstr ""
 msgid "Featured Images"
 msgstr "특성 이미지"
 
-#: wp-admin/includes/class-wp-press-this.php:823
+#: wp-admin/includes/class-wp-press-this.php:841
 #: wp-admin/includes/meta-boxes.php:385 wp-admin/includes/theme.php:263
 msgid "Post Formats"
 msgstr "글 형식"
@@ -7538,7 +7538,7 @@ msgstr "모두 보기"
 msgid "Please enter a valid menu name."
 msgstr "올바른 메뉴명을 입력해주세요."
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:248
 msgid "Go to Dashboard"
 msgstr "대시보드로 가기 l&rsquo;홈"
 
@@ -10039,7 +10039,7 @@ msgstr "이 댓글 승인하지 않음"
 msgid "Approve this comment"
 msgstr "이 댓글 승인"
 
-#: wp-admin/includes/class-wp-press-this.php:1482
+#: wp-admin/includes/class-wp-press-this.php:1520
 #: wp-admin/includes/meta-boxes.php:269 wp-admin/includes/meta-boxes.php:270
 msgid "Submit for Review"
 msgstr "리뷰를 하기 위한 등록"
