@@ -100,7 +100,7 @@ $args = array(
 	'post_type'      => 'avada_portfolio',
 	'paged'          => $paged,
 	'posts_per_page' => $number_of_portfolio_items,
-	'orderby'		 => 'titl',
+	'orderby'		 => 'title',
 	'order'          => 'ASC',
 );
 ?>
