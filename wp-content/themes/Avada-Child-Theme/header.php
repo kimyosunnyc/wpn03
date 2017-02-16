@@ -16,26 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-$(document).ready(function(){
-// Open SideNav
-	$(".open-toggle").click(function () {
-		var effect = 'slide'; // Set the effect type
-		var options = { direction: 'right' }; // Set the options for the effect type chosen
-		var duration = 500; // Set the duration (default: 500 milliseconds)
-		$('#slidingbar').toggle(effect, options, duration);
-	});
-
-// Close SideNav
-	$(".close-toggle").click(function () {
-		var effect = 'slide'; // Set the effect type
-		var options = { direction: 'right' }; // Set the options for the effect type chosen
-		var duration = 500; // Set the duration (default: 500 milliseconds)
-		$('#slidingbar').toggle(effect, options, duration);
-	});
-});
-</script>
-
 
 	<?php $is_ipad = (bool) ( isset( $_SERVER['HTTP_USER_AGENT'] ) && false !== strpos( $_SERVER['HTTP_USER_AGENT'],'iPad' ) ); ?>
 
